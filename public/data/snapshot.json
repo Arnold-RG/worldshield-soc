@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated_at": "2026-11-15T07:14:11Z",
+  "generated_at": "2026-11-15T14:49:31Z",
   "label": "Near-real-time cached threat activity from public feeds",
   "cache_note": "This is a near-real-time cached snapshot built by the fetch job. It is not a live attack stream.",
   "simulated": false,
@@ -18,7 +18,7 @@
       "licence_url": "https://urlhaus.abuse.ch/api/",
       "role_note": "Recent malware URLs. A mapped country is the DB-IP country of an IP literal in the URL, not a victim.",
       "last_updated": null,
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": false,
       "error": "HTTPError: HTTP Error 410: Gone URLhaus now requires a free Auth-Key from https://auth.abuse.ch/. Set ABUSECH_AUTH_KEY to enable this feed. No key is committed.",
       "parsed_count": 0,
@@ -35,7 +35,7 @@
       "licence_url": "https://threatfox.abuse.ch/api/",
       "role_note": "Recent indicators. A mapped country is the DB-IP country of an IP literal in the indicator, not a victim.",
       "last_updated": null,
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": false,
       "error": "HTTPError: HTTP Error 410: Gone ThreatFox now requires a free Auth-Key from https://auth.abuse.ch/. Set ABUSECH_AUTH_KEY to enable this feed. No key is committed.",
       "parsed_count": 0,
@@ -52,7 +52,7 @@
       "licence_url": "https://feodotracker.abuse.ch/blocklist/",
       "role_note": "Botnet C2 addresses. The country is the one Feodo publishes for that address, not a victim country.",
       "last_updated": "2026-03-04T14:28:39Z",
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": true,
       "error": null,
       "parsed_count": 5,
@@ -69,8 +69,8 @@
       "licence": "Use only under the Spamhaus DROP terms. This cache attributes Spamhaus and does not resell the lists.",
       "licence_url": "https://www.spamhaus.org/drop/",
       "role_note": "Listed networks. Country is the DB-IP country of the network address, not a victim country. The file has one last-modified time, not a timestamp per network, so these rows are left out of the 24 hour chart.",
-      "last_updated": "2026-11-15T06:56:44Z",
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "last_updated": "2026-11-15T14:26:44Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": true,
       "error": null,
       "parsed_count": 1759,
@@ -89,7 +89,7 @@
       "licence_url": "https://isc.sans.edu/api/",
       "role_note": "Source addresses reported to DShield sensors, grouped by the country of the source. The target number in the API is a destination-address count, not a target country. SANS describes the country table as about the last 30 days and does not stamp each row. SANS ISC InfoCon at fetch time: green.",
       "last_updated": null,
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": true,
       "error": null,
       "parsed_count": 310,
@@ -106,7 +106,7 @@
       "licence_url": "https://sslbl.abuse.ch/blacklist/",
       "role_note": "IP addresses associated with malicious SSL certificates. A mapped country is the DB-IP country of the address, not a victim. The publisher marked this list deprecated in January 2025; an empty parse is reported honestly.",
       "last_updated": "2025-01-03T11:30:00Z",
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": true,
       "error": null,
       "parsed_count": 0,
@@ -122,11 +122,11 @@
       "licence": "Use only under the Spamhaus DROP terms. This cache attributes Spamhaus and does not resell the lists.",
       "licence_url": "https://www.spamhaus.org/drop/",
       "role_note": "Autonomous systems listed by Spamhaus ASN-DROP. These are network listings, not attack paths, and are not drawn as globe arcs.",
-      "last_updated": "2026-11-15T06:56:44Z",
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "last_updated": "2026-11-15T14:26:44Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": true,
       "error": null,
-      "parsed_count": 455,
+      "parsed_count": 454,
       "listed_count": 0
     },
     {
@@ -140,7 +140,7 @@
       "licence_url": "https://openphish.com/",
       "role_note": "Phishing URLs. A mapped country is the DB-IP country of an IP literal in the URL, not a victim. The file has no per-row timestamp, so these rows are left out of the 24 hour chart.",
       "last_updated": null,
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": true,
       "error": null,
       "parsed_count": 300,
@@ -157,7 +157,7 @@
       "licence_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "role_note": "Vulnerabilities CISA lists as known to be exploited. They are not placed on the globe.",
       "last_updated": "2026-11-13T20:24:18Z",
-      "fetched_at": "2026-11-15T07:14:11Z",
+      "fetched_at": "2026-11-15T14:49:31Z",
       "ok": true,
       "error": null,
       "parsed_count": 1781,
@@ -181,17 +181,17 @@
     "feodo": 5,
     "spamhaus": 1759,
     "sslbl": 0,
-    "asndrop": 455,
+    "asndrop": 454,
     "openphish": 300,
-    "dshield_source_addresses": 186882,
-    "dshield_source_reports": 617609983,
+    "dshield_source_addresses": 185065,
+    "dshield_source_reports": 585668043,
     "countries": 203,
     "kev": 1781,
     "kev_listed": 30,
     "kev_ransomware": 0,
     "listed_events": 175,
     "malware_families": 2,
-    "asns": 458,
+    "asns": 457,
     "feeds_ok": 7,
     "feeds_failed": 2,
     "feeds_total": 9
@@ -202,9 +202,9 @@
       "name": "United States of America",
       "lat": 39.538,
       "lon": -97.483,
-      "source_addresses": 43901,
-      "source_reports": 179047027,
-      "persistence_days": 311.7212,
+      "source_addresses": 42823,
+      "source_reports": 168283042,
+      "persistence_days": 319.4451,
       "host_observations": 670,
       "by_feed": {
         "feodo": {
@@ -214,8 +214,8 @@
           "observations": 667
         },
         "dshield": {
-          "source_addresses": 43901,
-          "source_reports": 179047027,
+          "source_addresses": 42823,
+          "source_reports": 168283042,
           "observations": 0
         }
       },
@@ -232,17 +232,17 @@
       "name": "People's Republic of China",
       "lat": 32.498,
       "lon": 106.337,
-      "source_addresses": 28172,
-      "source_reports": 12985741,
-      "persistence_days": 335.755,
+      "source_addresses": 28096,
+      "source_reports": 12473695,
+      "persistence_days": 336.6401,
       "host_observations": 103,
       "by_feed": {
         "spamhaus": {
           "observations": 103
         },
         "dshield": {
-          "source_addresses": 28172,
-          "source_reports": 12985741,
+          "source_addresses": 28096,
+          "source_reports": 12473695,
           "observations": 0
         }
       },
@@ -257,17 +257,17 @@
       "name": "Canada",
       "lat": 60.324,
       "lon": -101.911,
-      "source_addresses": 7679,
-      "source_reports": 40718647,
-      "persistence_days": 165.0734,
+      "source_addresses": 7581,
+      "source_reports": 40163103,
+      "persistence_days": 167.0774,
       "host_observations": 84,
       "by_feed": {
         "spamhaus": {
           "observations": 84
         },
         "dshield": {
-          "source_addresses": 7679,
-          "source_reports": 40718647,
+          "source_addresses": 7581,
+          "source_reports": 40163103,
           "observations": 0
         }
       },
@@ -281,17 +281,17 @@
       "name": "Russia",
       "lat": 58.249,
       "lon": 44.686,
-      "source_addresses": 7265,
-      "source_reports": 10701638,
-      "persistence_days": 236.8476,
+      "source_addresses": 7238,
+      "source_reports": 10297510,
+      "persistence_days": 237.6901,
       "host_observations": 50,
       "by_feed": {
         "spamhaus": {
           "observations": 50
         },
         "dshield": {
-          "source_addresses": 7265,
-          "source_reports": 10701638,
+          "source_addresses": 7238,
+          "source_reports": 10297510,
           "observations": 0
         }
       },
@@ -306,17 +306,17 @@
       "name": "Pakistan",
       "lat": 29.328,
       "lon": 68.546,
-      "source_addresses": 6218,
-      "source_reports": 4852506,
-      "persistence_days": 173.1427,
+      "source_addresses": 6217,
+      "source_reports": 4799552,
+      "persistence_days": 173.1615,
       "host_observations": 6,
       "by_feed": {
         "spamhaus": {
           "observations": 6
         },
         "dshield": {
-          "source_addresses": 6218,
-          "source_reports": 4852506,
+          "source_addresses": 6217,
+          "source_reports": 4799552,
           "observations": 0
         }
       },
@@ -331,17 +331,17 @@
       "name": "Brazil",
       "lat": -12.099,
       "lon": -49.559,
-      "source_addresses": 5868,
-      "source_reports": 7141291,
-      "persistence_days": 146.0002,
+      "source_addresses": 5840,
+      "source_reports": 6522823,
+      "persistence_days": 146.6553,
       "host_observations": 5,
       "by_feed": {
         "spamhaus": {
           "observations": 5
         },
         "dshield": {
-          "source_addresses": 5868,
-          "source_reports": 7141291,
+          "source_addresses": 5840,
+          "source_reports": 6522823,
           "observations": 0
         }
       },
@@ -356,9 +356,9 @@
       "name": "United Kingdom",
       "lat": 54.403,
       "lon": -2.116,
-      "source_addresses": 5515,
-      "source_reports": 31055116,
-      "persistence_days": 464.5603,
+      "source_addresses": 5496,
+      "source_reports": 30450428,
+      "persistence_days": 466.1197,
       "host_observations": 107,
       "by_feed": {
         "feodo": {
@@ -368,8 +368,8 @@
           "observations": 106
         },
         "dshield": {
-          "source_addresses": 5515,
-          "source_reports": 31055116,
+          "source_addresses": 5496,
+          "source_reports": 30450428,
           "observations": 0
         }
       },
@@ -385,17 +385,17 @@
       "name": "Ukraine",
       "lat": 49.725,
       "lon": 32.141,
-      "source_addresses": 5446,
-      "source_reports": 1010087,
-      "persistence_days": 116.3142,
+      "source_addresses": 5433,
+      "source_reports": 928705,
+      "persistence_days": 116.5651,
       "host_observations": 20,
       "by_feed": {
         "spamhaus": {
           "observations": 20
         },
         "dshield": {
-          "source_addresses": 5446,
-          "source_reports": 1010087,
+          "source_addresses": 5433,
+          "source_reports": 928705,
           "observations": 0
         }
       },
@@ -410,17 +410,17 @@
       "name": "Argentina",
       "lat": -33.501,
       "lon": -64.173,
-      "source_addresses": 4837,
-      "source_reports": 484514,
-      "persistence_days": 109.1183,
+      "source_addresses": 4835,
+      "source_reports": 475444,
+      "persistence_days": 109.1553,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
           "observations": 2
         },
         "dshield": {
-          "source_addresses": 4837,
-          "source_reports": 484514,
+          "source_addresses": 4835,
+          "source_reports": 475444,
           "observations": 0
         }
       },
@@ -435,17 +435,17 @@
       "name": "Netherlands",
       "lat": 52.422,
       "lon": 5.611,
-      "source_addresses": 4835,
-      "source_reports": 67427508,
-      "persistence_days": 246.6147,
+      "source_addresses": 4796,
+      "source_reports": 66490560,
+      "persistence_days": 248.4568,
       "host_observations": 81,
       "by_feed": {
         "spamhaus": {
           "observations": 81
         },
         "dshield": {
-          "source_addresses": 4835,
-          "source_reports": 67427508,
+          "source_addresses": 4796,
+          "source_reports": 66490560,
           "observations": 0
         }
       },
@@ -460,17 +460,17 @@
       "name": "Germany",
       "lat": 50.962,
       "lon": 9.678,
-      "source_addresses": 4711,
-      "source_reports": 23970429,
-      "persistence_days": 254.7077,
+      "source_addresses": 4664,
+      "source_reports": 23103112,
+      "persistence_days": 257.175,
       "host_observations": 55,
       "by_feed": {
         "spamhaus": {
           "observations": 55
         },
         "dshield": {
-          "source_addresses": 4711,
-          "source_reports": 23970429,
+          "source_addresses": 4664,
+          "source_reports": 23103112,
           "observations": 0
         }
       },
@@ -485,17 +485,17 @@
       "name": "India",
       "lat": 22.687,
       "lon": 79.358,
-      "source_addresses": 3670,
-      "source_reports": 3527706,
-      "persistence_days": 283.0139,
+      "source_addresses": 3664,
+      "source_reports": 3482901,
+      "persistence_days": 283.446,
       "host_observations": 30,
       "by_feed": {
         "spamhaus": {
           "observations": 30
         },
         "dshield": {
-          "source_addresses": 3670,
-          "source_reports": 3527706,
+          "source_addresses": 3664,
+          "source_reports": 3482901,
           "observations": 0
         }
       },
@@ -510,17 +510,17 @@
       "name": "France",
       "lat": 46.696,
       "lon": 2.552,
-      "source_addresses": 3507,
-      "source_reports": 47085868,
-      "persistence_days": 226.8118,
+      "source_addresses": 3494,
+      "source_reports": 45345337,
+      "persistence_days": 227.5532,
       "host_observations": 22,
       "by_feed": {
         "spamhaus": {
           "observations": 22
         },
         "dshield": {
-          "source_addresses": 3507,
-          "source_reports": 47085868,
+          "source_addresses": 3494,
+          "source_reports": 45345337,
           "observations": 0
         }
       },
@@ -535,17 +535,17 @@
       "name": "South Korea",
       "lat": 36.385,
       "lon": 128.13,
-      "source_addresses": 3284,
-      "source_reports": 3437082,
-      "persistence_days": 260.8298,
+      "source_addresses": 3279,
+      "source_reports": 3359586,
+      "persistence_days": 261.1961,
       "host_observations": 12,
       "by_feed": {
         "spamhaus": {
           "observations": 12
         },
         "dshield": {
-          "source_addresses": 3284,
-          "source_reports": 3437082,
+          "source_addresses": 3279,
+          "source_reports": 3359586,
           "observations": 0
         }
       },
@@ -560,9 +560,9 @@
       "name": "Japan",
       "lat": 36.143,
       "lon": 138.442,
-      "source_addresses": 2558,
-      "source_reports": 5106950,
-      "persistence_days": 199.993,
+      "source_addresses": 2548,
+      "source_reports": 4984771,
+      "persistence_days": 200.7398,
       "host_observations": 90,
       "by_feed": {
         "feodo": {
@@ -572,8 +572,8 @@
           "observations": 89
         },
         "dshield": {
-          "source_addresses": 2558,
-          "source_reports": 5106950,
+          "source_addresses": 2548,
+          "source_reports": 4984771,
           "observations": 0
         }
       },
@@ -609,17 +609,17 @@
       "name": "Turkey",
       "lat": 39.345,
       "lon": 34.508,
-      "source_addresses": 2235,
-      "source_reports": 20891967,
-      "persistence_days": 131.9942,
+      "source_addresses": 2228,
+      "source_reports": 20543652,
+      "persistence_days": 132.3263,
       "host_observations": 12,
       "by_feed": {
         "spamhaus": {
           "observations": 12
         },
         "dshield": {
-          "source_addresses": 2235,
-          "source_reports": 20891967,
+          "source_addresses": 2228,
+          "source_reports": 20543652,
           "observations": 0
         }
       },
@@ -634,17 +634,17 @@
       "name": "Hong Kong",
       "lat": 22.449,
       "lon": 114.098,
-      "source_addresses": 2129,
-      "source_reports": 6782183,
-      "persistence_days": 284.9512,
+      "source_addresses": 2116,
+      "source_reports": 7347577,
+      "persistence_days": 286.6309,
       "host_observations": 97,
       "by_feed": {
         "spamhaus": {
           "observations": 97
         },
         "dshield": {
-          "source_addresses": 2129,
-          "source_reports": 6782183,
+          "source_addresses": 2116,
+          "source_reports": 7347577,
           "observations": 0
         }
       },
@@ -659,17 +659,17 @@
       "name": "Singapore",
       "lat": 1.367,
       "lon": 103.817,
-      "source_addresses": 2109,
-      "source_reports": 12607685,
-      "persistence_days": 259.0721,
+      "source_addresses": 2094,
+      "source_reports": 12063749,
+      "persistence_days": 260.681,
       "host_observations": 11,
       "by_feed": {
         "spamhaus": {
           "observations": 11
         },
         "dshield": {
-          "source_addresses": 2109,
-          "source_reports": 12607685,
+          "source_addresses": 2094,
+          "source_reports": 12063749,
           "observations": 0
         }
       },
@@ -684,17 +684,17 @@
       "name": "Indonesia",
       "lat": -0.954,
       "lon": 101.893,
-      "source_addresses": 1874,
-      "source_reports": 2703630,
-      "persistence_days": 266.7273,
+      "source_addresses": 1869,
+      "source_reports": 2647172,
+      "persistence_days": 267.42,
       "host_observations": 10,
       "by_feed": {
         "spamhaus": {
           "observations": 10
         },
         "dshield": {
-          "source_addresses": 1874,
-          "source_reports": 2703630,
+          "source_addresses": 1869,
+          "source_reports": 2647172,
           "observations": 0
         }
       },
@@ -709,17 +709,17 @@
       "name": "Taiwan",
       "lat": 23.652,
       "lon": 120.868,
-      "source_addresses": 1759,
-      "source_reports": 1328028,
-      "persistence_days": 233.909,
+      "source_addresses": 1756,
+      "source_reports": 1326379,
+      "persistence_days": 234.4812,
       "host_observations": 5,
       "by_feed": {
         "spamhaus": {
           "observations": 5
         },
         "dshield": {
-          "source_addresses": 1759,
-          "source_reports": 1328028,
+          "source_addresses": 1756,
+          "source_reports": 1326379,
           "observations": 0
         }
       },
@@ -733,17 +733,17 @@
       "name": "Sweden",
       "lat": 65.859,
       "lon": 19.017,
-      "source_addresses": 1509,
-      "source_reports": 2599006,
-      "persistence_days": 228.1942,
+      "source_addresses": 1494,
+      "source_reports": 2450308,
+      "persistence_days": 230.324,
       "host_observations": 4,
       "by_feed": {
         "spamhaus": {
           "observations": 4
         },
         "dshield": {
-          "source_addresses": 1509,
-          "source_reports": 2599006,
+          "source_addresses": 1494,
+          "source_reports": 2450308,
           "observations": 0
         }
       },
@@ -757,17 +757,17 @@
       "name": "Switzerland",
       "lat": 46.719,
       "lon": 7.464,
-      "source_addresses": 1494,
-      "source_reports": 8222677,
-      "persistence_days": 295.8246,
+      "source_addresses": 1480,
+      "source_reports": 7621482,
+      "persistence_days": 298.4081,
       "host_observations": 9,
       "by_feed": {
         "spamhaus": {
           "observations": 9
         },
         "dshield": {
-          "source_addresses": 1494,
-          "source_reports": 8222677,
+          "source_addresses": 1480,
+          "source_reports": 7621482,
           "observations": 0
         }
       },
@@ -781,17 +781,17 @@
       "name": "Mexico",
       "lat": 23.92,
       "lon": -102.289,
-      "source_addresses": 1411,
-      "source_reports": 677466,
-      "persistence_days": 169.9235,
+      "source_addresses": 1404,
+      "source_reports": 631015,
+      "persistence_days": 170.7507,
       "host_observations": 11,
       "by_feed": {
         "spamhaus": {
           "observations": 11
         },
         "dshield": {
-          "source_addresses": 1411,
-          "source_reports": 677466,
+          "source_addresses": 1404,
+          "source_reports": 631015,
           "observations": 0
         }
       },
@@ -805,17 +805,17 @@
       "name": "Vietnam",
       "lat": 21.715,
       "lon": 105.387,
-      "source_addresses": 1262,
-      "source_reports": 2449266,
-      "persistence_days": 358.2995,
+      "source_addresses": 1253,
+      "source_reports": 2411571,
+      "persistence_days": 360.8188,
       "host_observations": 9,
       "by_feed": {
         "spamhaus": {
           "observations": 9
         },
         "dshield": {
-          "source_addresses": 1262,
-          "source_reports": 2449266,
+          "source_addresses": 1253,
+          "source_reports": 2411571,
           "observations": 0
         }
       },
@@ -830,17 +830,17 @@
       "name": "Malaysia",
       "lat": 2.529,
       "lon": 113.837,
-      "source_addresses": 1209,
-      "source_reports": 727321,
-      "persistence_days": 281.0562,
+      "source_addresses": 1208,
+      "source_reports": 726808,
+      "persistence_days": 281.2889,
       "host_observations": 21,
       "by_feed": {
         "spamhaus": {
           "observations": 21
         },
         "dshield": {
-          "source_addresses": 1209,
-          "source_reports": 727321,
+          "source_addresses": 1208,
+          "source_reports": 726808,
           "observations": 0
         }
       },
@@ -854,17 +854,17 @@
       "name": "Spain",
       "lat": 40.091,
       "lon": -3.465,
-      "source_addresses": 1207,
-      "source_reports": 727227,
-      "persistence_days": 177.7523,
+      "source_addresses": 1201,
+      "source_reports": 717968,
+      "persistence_days": 178.6361,
       "host_observations": 13,
       "by_feed": {
         "spamhaus": {
           "observations": 13
         },
         "dshield": {
-          "source_addresses": 1207,
-          "source_reports": 727227,
+          "source_addresses": 1201,
+          "source_reports": 717968,
           "observations": 0
         }
       },
@@ -879,17 +879,17 @@
       "name": "Colombia",
       "lat": 3.373,
       "lon": -73.174,
-      "source_addresses": 1163,
-      "source_reports": 229280,
-      "persistence_days": 158.6707,
+      "source_addresses": 1162,
+      "source_reports": 229046,
+      "persistence_days": 158.8072,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 1163,
-          "source_reports": 229280,
+          "source_addresses": 1162,
+          "source_reports": 229046,
           "observations": 0
         }
       },
@@ -903,17 +903,17 @@
       "name": "Bangladesh",
       "lat": 24.215,
       "lon": 89.685,
-      "source_addresses": 1097,
-      "source_reports": 555211,
-      "persistence_days": 167.3519,
+      "source_addresses": 1096,
+      "source_reports": 426869,
+      "persistence_days": 167.4827,
       "host_observations": 8,
       "by_feed": {
         "spamhaus": {
           "observations": 8
         },
         "dshield": {
-          "source_addresses": 1097,
-          "source_reports": 555211,
+          "source_addresses": 1096,
+          "source_reports": 426869,
           "observations": 0
         }
       },
@@ -928,17 +928,17 @@
       "name": "Australia",
       "lat": -24.13,
       "lon": 134.05,
-      "source_addresses": 987,
-      "source_reports": 1818832,
-      "persistence_days": 193.2381,
+      "source_addresses": 982,
+      "source_reports": 1790646,
+      "persistence_days": 194.1813,
       "host_observations": 11,
       "by_feed": {
         "spamhaus": {
           "observations": 11
         },
         "dshield": {
-          "source_addresses": 987,
-          "source_reports": 1818832,
+          "source_addresses": 982,
+          "source_reports": 1790646,
           "observations": 0
         }
       },
@@ -954,7 +954,7 @@
       "lon": -90.497,
       "source_addresses": 935,
       "source_reports": 34258,
-      "persistence_days": 101.7679,
+      "persistence_days": 101.7668,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -974,7 +974,7 @@
       "lon": 21.726,
       "source_addresses": 898,
       "source_reports": 654740,
-      "persistence_days": 201.9699,
+      "persistence_days": 201.9688,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -992,17 +992,17 @@
       "name": "South Africa",
       "lat": -29.709,
       "lon": 23.666,
-      "source_addresses": 891,
-      "source_reports": 601010,
-      "persistence_days": 191.0348,
+      "source_addresses": 889,
+      "source_reports": 670346,
+      "persistence_days": 191.6805,
       "host_observations": 22,
       "by_feed": {
         "spamhaus": {
           "observations": 22
         },
         "dshield": {
-          "source_addresses": 891,
-          "source_reports": 601010,
+          "source_addresses": 889,
+          "source_reports": 670346,
           "observations": 0
         }
       },
@@ -1017,17 +1017,42 @@
       "name": "Chile",
       "lat": -38.152,
       "lon": -72.319,
-      "source_addresses": 863,
-      "source_reports": 253866,
-      "persistence_days": 155.7173,
+      "source_addresses": 860,
+      "source_reports": 252025,
+      "persistence_days": 156.2209,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
           "observations": 3
         },
         "dshield": {
-          "source_addresses": 863,
-          "source_reports": 253866,
+          "source_addresses": 860,
+          "source_reports": 252025,
+          "observations": 0
+        }
+      },
+      "types": [
+        "asn-drop",
+        "drop-listing",
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "lat": 44.732,
+      "lon": 11.077,
+      "source_addresses": 815,
+      "source_reports": 2410993,
+      "persistence_days": 258.1141,
+      "host_observations": 6,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 6
+        },
+        "dshield": {
+          "source_addresses": 815,
+          "source_reports": 2410993,
           "observations": 0
         }
       },
@@ -1042,71 +1067,21 @@
       "name": "Finland",
       "lat": 63.252,
       "lon": 27.276,
-      "source_addresses": 827,
-      "source_reports": 3615102,
-      "persistence_days": 214.0024,
+      "source_addresses": 803,
+      "source_reports": 3439338,
+      "persistence_days": 219.8356,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
           "observations": 3
         },
         "dshield": {
-          "source_addresses": 827,
-          "source_reports": 3615102,
+          "source_addresses": 803,
+          "source_reports": 3439338,
           "observations": 0
         }
       },
       "types": [
-        "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "IT",
-      "name": "Italy",
-      "lat": 44.732,
-      "lon": 11.077,
-      "source_addresses": 823,
-      "source_reports": 2483969,
-      "persistence_days": 255.729,
-      "host_observations": 6,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 6
-        },
-        "dshield": {
-          "source_addresses": 823,
-          "source_reports": 2483969,
-          "observations": 0
-        }
-      },
-      "types": [
-        "asn-drop",
-        "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "BG",
-      "name": "Bulgaria",
-      "lat": 42.509,
-      "lon": 25.157,
-      "source_addresses": 784,
-      "source_reports": 66432699,
-      "persistence_days": 175.176,
-      "host_observations": 7,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 7
-        },
-        "dshield": {
-          "source_addresses": 784,
-          "source_reports": 66432699,
-          "observations": 0
-        }
-      },
-      "types": [
-        "asn-drop",
         "drop-listing",
         "sensor-source"
       ]
@@ -1116,17 +1091,17 @@
       "name": "Venezuela",
       "lat": 7.182,
       "lon": -64.599,
-      "source_addresses": 772,
-      "source_reports": 86318,
-      "persistence_days": 165.5868,
+      "source_addresses": 771,
+      "source_reports": 86127,
+      "persistence_days": 165.8016,
       "host_observations": 4,
       "by_feed": {
         "spamhaus": {
           "observations": 4
         },
         "dshield": {
-          "source_addresses": 772,
-          "source_reports": 86318,
+          "source_addresses": 771,
+          "source_reports": 86127,
           "observations": 0
         }
       },
@@ -1140,17 +1115,17 @@
       "name": "Philippines",
       "lat": 11.198,
       "lon": 122.465,
-      "source_addresses": 743,
-      "source_reports": 1233054,
-      "persistence_days": 288.4011,
+      "source_addresses": 740,
+      "source_reports": 499688,
+      "persistence_days": 289.3014,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 743,
-          "source_reports": 1233054,
+          "source_addresses": 740,
+          "source_reports": 499688,
           "observations": 0
         }
       },
@@ -1164,17 +1139,17 @@
       "name": "Thailand",
       "lat": 15.46,
       "lon": 101.073,
-      "source_addresses": 735,
-      "source_reports": 698574,
-      "persistence_days": 284.5238,
+      "source_addresses": 732,
+      "source_reports": 691913,
+      "persistence_days": 285.6749,
       "host_observations": 6,
       "by_feed": {
         "spamhaus": {
           "observations": 6
         },
         "dshield": {
-          "source_addresses": 735,
-          "source_reports": 698574,
+          "source_addresses": 732,
+          "source_reports": 691913,
           "observations": 0
         }
       },
@@ -1188,17 +1163,17 @@
       "name": "Poland",
       "lat": 51.99,
       "lon": 19.49,
-      "source_addresses": 722,
-      "source_reports": 922979,
-      "persistence_days": 153.349,
+      "source_addresses": 717,
+      "source_reports": 895037,
+      "persistence_days": 154.3138,
       "host_observations": 12,
       "by_feed": {
         "spamhaus": {
           "observations": 12
         },
         "dshield": {
-          "source_addresses": 722,
-          "source_reports": 922979,
+          "source_addresses": 717,
+          "source_reports": 895037,
           "observations": 0
         }
       },
@@ -1212,14 +1187,14 @@
       "name": "Portugal",
       "lat": 39.607,
       "lon": -8.272,
-      "source_addresses": 718,
-      "source_reports": 1277665,
-      "persistence_days": 439.3036,
+      "source_addresses": 714,
+      "source_reports": 1267008,
+      "persistence_days": 441.6513,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 718,
-          "source_reports": 1277665,
+          "source_addresses": 714,
+          "source_reports": 1267008,
           "observations": 0
         }
       },
@@ -1228,21 +1203,46 @@
       ]
     },
     {
-      "code": "IR",
-      "name": "Iran",
-      "lat": 32.166,
-      "lon": 54.931,
-      "source_addresses": 670,
-      "source_reports": 1587893,
-      "persistence_days": 113.9761,
+      "code": "BG",
+      "name": "Bulgaria",
+      "lat": 42.509,
+      "lon": 25.157,
+      "source_addresses": 703,
+      "source_reports": 56453449,
+      "persistence_days": 192.0811,
       "host_observations": 7,
       "by_feed": {
         "spamhaus": {
           "observations": 7
         },
         "dshield": {
-          "source_addresses": 670,
-          "source_reports": 1587893,
+          "source_addresses": 703,
+          "source_reports": 56453449,
+          "observations": 0
+        }
+      },
+      "types": [
+        "asn-drop",
+        "drop-listing",
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "IR",
+      "name": "Iran",
+      "lat": 32.166,
+      "lon": 54.931,
+      "source_addresses": 666,
+      "source_reports": 1487683,
+      "persistence_days": 114.0751,
+      "host_observations": 7,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 7
+        },
+        "dshield": {
+          "source_addresses": 666,
+          "source_reports": 1487683,
           "observations": 0
         }
       },
@@ -1257,17 +1257,17 @@
       "name": "Belgium",
       "lat": 50.785,
       "lon": 4.8,
-      "source_addresses": 637,
-      "source_reports": 639836,
-      "persistence_days": 314.4035,
+      "source_addresses": 635,
+      "source_reports": 593584,
+      "persistence_days": 315.2835,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 637,
-          "source_reports": 639836,
+          "source_addresses": 635,
+          "source_reports": 593584,
           "observations": 0
         }
       },
@@ -1302,17 +1302,17 @@
       "name": "Romania",
       "lat": 45.733,
       "lon": 24.973,
-      "source_addresses": 495,
-      "source_reports": 6718716,
-      "persistence_days": 213.1475,
+      "source_addresses": 486,
+      "source_reports": 6445818,
+      "persistence_days": 216.1358,
       "host_observations": 19,
       "by_feed": {
         "spamhaus": {
           "observations": 19
         },
         "dshield": {
-          "source_addresses": 495,
-          "source_reports": 6718716,
+          "source_addresses": 486,
+          "source_reports": 6445818,
           "observations": 0
         }
       },
@@ -1329,7 +1329,7 @@
       "lon": 95.804,
       "source_addresses": 483,
       "source_reports": 300078,
-      "persistence_days": 106.2857,
+      "persistence_days": 106.2836,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1339,31 +1339,6 @@
         }
       },
       "types": [
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "LT",
-      "name": "Lithuania",
-      "lat": 55.104,
-      "lon": 24.09,
-      "source_addresses": 471,
-      "source_reports": 807960,
-      "persistence_days": 111.3864,
-      "host_observations": 15,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 15
-        },
-        "dshield": {
-          "source_addresses": 471,
-          "source_reports": 807960,
-          "observations": 0
-        }
-      },
-      "types": [
-        "asn-drop",
-        "drop-listing",
         "sensor-source"
       ]
     },
@@ -1388,18 +1363,43 @@
       ]
     },
     {
+      "code": "LT",
+      "name": "Lithuania",
+      "lat": 55.104,
+      "lon": 24.09,
+      "source_addresses": 463,
+      "source_reports": 755463,
+      "persistence_days": 112.7084,
+      "host_observations": 15,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 15
+        },
+        "dshield": {
+          "source_addresses": 463,
+          "source_reports": 755463,
+          "observations": 0
+        }
+      },
+      "types": [
+        "asn-drop",
+        "drop-listing",
+        "sensor-source"
+      ]
+    },
+    {
       "code": "IL",
       "name": "Israel",
       "lat": 30.911,
       "lon": 34.848,
-      "source_addresses": 463,
-      "source_reports": 175455,
-      "persistence_days": 162.3326,
+      "source_addresses": 462,
+      "source_reports": 171206,
+      "persistence_days": 162.6667,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 463,
-          "source_reports": 175455,
+          "source_addresses": 462,
+          "source_reports": 171206,
           "observations": 0
         }
       },
@@ -1413,46 +1413,21 @@
       "name": "Ecuador",
       "lat": -1.259,
       "lon": -78.188,
-      "source_addresses": 447,
-      "source_reports": 73152,
-      "persistence_days": 154.821,
+      "source_addresses": 446,
+      "source_reports": 70877,
+      "persistence_days": 155.0314,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 447,
-          "source_reports": 73152,
+          "source_addresses": 446,
+          "source_reports": 70877,
           "observations": 0
         }
       },
       "types": [
-        "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "KZ",
-      "name": "Kazakhstan",
-      "lat": 49.054,
-      "lon": 68.686,
-      "source_addresses": 384,
-      "source_reports": 2147977,
-      "persistence_days": 334.263,
-      "host_observations": 2,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 2
-        },
-        "dshield": {
-          "source_addresses": 384,
-          "source_reports": 2147977,
-          "observations": 0
-        }
-      },
-      "types": [
-        "asn-drop",
         "drop-listing",
         "sensor-source"
       ]
@@ -1463,13 +1438,13 @@
       "lat": 53.079,
       "lon": -7.799,
       "source_addresses": 380,
-      "source_reports": 205499,
-      "persistence_days": 268.1237,
+      "source_reports": 201693,
+      "persistence_days": 268.1158,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 380,
-          "source_reports": 205499,
+          "source_reports": 201693,
           "observations": 0
         }
       },
@@ -1478,21 +1453,46 @@
       ]
     },
     {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "lat": 49.054,
+      "lon": 68.686,
+      "source_addresses": 379,
+      "source_reports": 1669173,
+      "persistence_days": 338.533,
+      "host_observations": 2,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 2
+        },
+        "dshield": {
+          "source_addresses": 379,
+          "source_reports": 1669173,
+          "observations": 0
+        }
+      },
+      "types": [
+        "asn-drop",
+        "drop-listing",
+        "sensor-source"
+      ]
+    },
+    {
       "code": "SC",
       "name": "Seychelles",
       "lat": -4.677,
       "lon": 55.48,
-      "source_addresses": 375,
-      "source_reports": 3079021,
-      "persistence_days": 88.7467,
+      "source_addresses": 363,
+      "source_reports": 2601451,
+      "persistence_days": 91.0909,
       "host_observations": 21,
       "by_feed": {
         "spamhaus": {
           "observations": 21
         },
         "dshield": {
-          "source_addresses": 375,
-          "source_reports": 3079021,
+          "source_addresses": 363,
+          "source_reports": 2601451,
           "observations": 0
         }
       },
@@ -1507,65 +1507,17 @@
       "name": "Czech Republic",
       "lat": 49.882,
       "lon": 15.378,
-      "source_addresses": 334,
-      "source_reports": 431750,
-      "persistence_days": 196.3503,
+      "source_addresses": 331,
+      "source_reports": 400638,
+      "persistence_days": 197.8701,
       "host_observations": 5,
       "by_feed": {
         "spamhaus": {
           "observations": 5
         },
         "dshield": {
-          "source_addresses": 334,
-          "source_reports": 431750,
-          "observations": 0
-        }
-      },
-      "types": [
-        "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "AE",
-      "name": "United Arab Emirates",
-      "lat": 23.466,
-      "lon": 54.547,
-      "source_addresses": 329,
-      "source_reports": 1919869,
-      "persistence_days": 215.7447,
-      "host_observations": 3,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 3
-        },
-        "dshield": {
-          "source_addresses": 329,
-          "source_reports": 1919869,
-          "observations": 0
-        }
-      },
-      "types": [
-        "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "HU",
-      "name": "Hungary",
-      "lat": 47.087,
-      "lon": 19.448,
-      "source_addresses": 326,
-      "source_reports": 164784,
-      "persistence_days": 132.1503,
-      "host_observations": 4,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 4
-        },
-        "dshield": {
-          "source_addresses": 326,
-          "source_reports": 164784,
+          "source_addresses": 331,
+          "source_reports": 400638,
           "observations": 0
         }
       },
@@ -1579,14 +1531,14 @@
       "name": "Dominican Republic",
       "lat": 19.104,
       "lon": -70.654,
-      "source_addresses": 320,
-      "source_reports": 91415,
-      "persistence_days": 133.6469,
+      "source_addresses": 319,
+      "source_reports": 87850,
+      "persistence_days": 133.906,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 320,
-          "source_reports": 91415,
+          "source_addresses": 319,
+          "source_reports": 87850,
           "observations": 0
         }
       },
@@ -1595,21 +1547,69 @@
       ]
     },
     {
+      "code": "HU",
+      "name": "Hungary",
+      "lat": 47.087,
+      "lon": 19.448,
+      "source_addresses": 318,
+      "source_reports": 128328,
+      "persistence_days": 135.4119,
+      "host_observations": 4,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 4
+        },
+        "dshield": {
+          "source_addresses": 318,
+          "source_reports": 128328,
+          "observations": 0
+        }
+      },
+      "types": [
+        "drop-listing",
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "lat": 23.466,
+      "lon": 54.547,
+      "source_addresses": 318,
+      "source_reports": 1845528,
+      "persistence_days": 222.4088,
+      "host_observations": 3,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 3
+        },
+        "dshield": {
+          "source_addresses": 318,
+          "source_reports": 1845528,
+          "observations": 0
+        }
+      },
+      "types": [
+        "drop-listing",
+        "sensor-source"
+      ]
+    },
+    {
       "code": "NO",
       "name": "Norway",
       "lat": 61.357,
       "lon": 9.68,
-      "source_addresses": 311,
-      "source_reports": 666382,
-      "persistence_days": 241.9228,
+      "source_addresses": 308,
+      "source_reports": 655499,
+      "persistence_days": 244.0097,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 311,
-          "source_reports": 666382,
+          "source_addresses": 308,
+          "source_reports": 655499,
           "observations": 0
         }
       },
@@ -1623,14 +1623,14 @@
       "name": "Georgia",
       "lat": 41.87,
       "lon": 43.736,
-      "source_addresses": 306,
-      "source_reports": 93739,
-      "persistence_days": 241.6895,
+      "source_addresses": 305,
+      "source_reports": 93557,
+      "persistence_days": 242.3148,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 306,
-          "source_reports": 93739,
+          "source_addresses": 305,
+          "source_reports": 93557,
           "observations": 0
         }
       },
@@ -1643,17 +1643,17 @@
       "name": "Austria",
       "lat": 47.519,
       "lon": 14.131,
-      "source_addresses": 299,
-      "source_reports": 327022,
-      "persistence_days": 278.8294,
+      "source_addresses": 295,
+      "source_reports": 324032,
+      "persistence_days": 282.322,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 299,
-          "source_reports": 327022,
+          "source_addresses": 295,
+          "source_reports": 324032,
           "observations": 0
         }
       },
@@ -1668,14 +1668,14 @@
       "name": "Denmark",
       "lat": 55.967,
       "lon": 9.018,
-      "source_addresses": 296,
-      "source_reports": 8394946,
-      "persistence_days": 232.5811,
+      "source_addresses": 294,
+      "source_reports": 8359444,
+      "persistence_days": 233.966,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 296,
-          "source_reports": 8394946,
+          "source_addresses": 294,
+          "source_reports": 8359444,
           "observations": 0
         }
       },
@@ -1713,17 +1713,17 @@
       "name": "Nigeria",
       "lat": 9.44,
       "lon": 7.503,
-      "source_addresses": 246,
-      "source_reports": 999951,
-      "persistence_days": 308.4878,
+      "source_addresses": 245,
+      "source_reports": 976151,
+      "persistence_days": 309.6939,
       "host_observations": 11,
       "by_feed": {
         "spamhaus": {
           "observations": 11
         },
         "dshield": {
-          "source_addresses": 246,
-          "source_reports": 999951,
+          "source_addresses": 245,
+          "source_reports": 976151,
           "observations": 0
         }
       },
@@ -1738,17 +1738,17 @@
       "name": "Moldova",
       "lat": 47.435,
       "lon": 28.488,
-      "source_addresses": 245,
-      "source_reports": 155883,
-      "persistence_days": 195.2898,
+      "source_addresses": 242,
+      "source_reports": 152300,
+      "persistence_days": 197.405,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
           "observations": 3
         },
         "dshield": {
-          "source_addresses": 245,
-          "source_reports": 155883,
+          "source_addresses": 242,
+          "source_reports": 152300,
           "observations": 0
         }
       },
@@ -1763,14 +1763,14 @@
       "name": "Azerbaijan",
       "lat": 40.402,
       "lon": 47.211,
-      "source_addresses": 243,
-      "source_reports": 598628,
-      "persistence_days": 221.2593,
+      "source_addresses": 242,
+      "source_reports": 595982,
+      "persistence_days": 222.1694,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 243,
-          "source_reports": 598628,
+          "source_addresses": 242,
+          "source_reports": 595982,
           "observations": 0
         }
       },
@@ -1784,8 +1784,8 @@
       "lat": -12.977,
       "lon": -72.9,
       "source_addresses": 239,
-      "source_reports": 137171,
-      "persistence_days": 205.2385,
+      "source_reports": 120430,
+      "persistence_days": 205.2301,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -1793,7 +1793,7 @@
         },
         "dshield": {
           "source_addresses": 239,
-          "source_reports": 137171,
+          "source_reports": 120430,
           "observations": 0
         }
       },
@@ -1807,17 +1807,17 @@
       "name": "New Zealand",
       "lat": -39.759,
       "lon": 172.787,
-      "source_addresses": 236,
-      "source_reports": 239350,
-      "persistence_days": 226.7966,
+      "source_addresses": 233,
+      "source_reports": 216474,
+      "persistence_days": 229.382,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
           "observations": 3
         },
         "dshield": {
-          "source_addresses": 236,
-          "source_reports": 239350,
+          "source_addresses": 233,
+          "source_reports": 216474,
           "observations": 0
         }
       },
@@ -1854,7 +1854,7 @@
       "lon": 44.801,
       "source_addresses": 196,
       "source_reports": 125818,
-      "persistence_days": 251.3827,
+      "persistence_days": 251.3776,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1892,17 +1892,17 @@
       "name": "Tunisia",
       "lat": 33.687,
       "lon": 9.008,
-      "source_addresses": 182,
-      "source_reports": 87581,
-      "persistence_days": 524.4121,
+      "source_addresses": 181,
+      "source_reports": 86980,
+      "persistence_days": 527.3094,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
           "observations": 3
         },
         "dshield": {
-          "source_addresses": 182,
-          "source_reports": 87581,
+          "source_addresses": 181,
+          "source_reports": 86980,
           "observations": 0
         }
       },
@@ -2005,14 +2005,14 @@
       "name": "Puerto Rico",
       "lat": 18.235,
       "lon": -66.481,
-      "source_addresses": 152,
-      "source_reports": 12286,
-      "persistence_days": 166.0789,
+      "source_addresses": 151,
+      "source_reports": 12039,
+      "persistence_days": 166.7285,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 152,
-          "source_reports": 12286,
+          "source_addresses": 151,
+          "source_reports": 12039,
           "observations": 0
         }
       },
@@ -2025,14 +2025,14 @@
       "name": "Mongolia",
       "lat": 45.997,
       "lon": 104.15,
-      "source_addresses": 147,
-      "source_reports": 70405,
-      "persistence_days": 707.0,
+      "source_addresses": 146,
+      "source_reports": 70023,
+      "persistence_days": 711.8425,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 147,
-          "source_reports": 70405,
+          "source_addresses": 146,
+          "source_reports": 70023,
           "observations": 0
         }
       },
@@ -2045,17 +2045,17 @@
       "name": "Slovenia",
       "lat": 46.061,
       "lon": 14.915,
-      "source_addresses": 145,
-      "source_reports": 327998,
-      "persistence_days": 158.9241,
+      "source_addresses": 143,
+      "source_reports": 317888,
+      "persistence_days": 160.965,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
           "observations": 3
         },
         "dshield": {
-          "source_addresses": 145,
-          "source_reports": 327998,
+          "source_addresses": 143,
+          "source_reports": 317888,
           "observations": 0
         }
       },
@@ -2089,14 +2089,14 @@
       "name": "Slovakia",
       "lat": 48.734,
       "lon": 19.05,
-      "source_addresses": 142,
-      "source_reports": 196932,
-      "persistence_days": 159.8732,
+      "source_addresses": 137,
+      "source_reports": 178113,
+      "persistence_days": 165.2044,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 142,
-          "source_reports": 196932,
+          "source_addresses": 137,
+          "source_reports": 178113,
           "observations": 0
         }
       },
@@ -2109,14 +2109,14 @@
       "name": "Serbia",
       "lat": 44.19,
       "lon": 20.788,
-      "source_addresses": 137,
-      "source_reports": 33868,
-      "persistence_days": 256.1606,
+      "source_addresses": 136,
+      "source_reports": 33646,
+      "persistence_days": 258.0441,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 137,
-          "source_reports": 33868,
+          "source_addresses": 136,
+          "source_reports": 33646,
           "observations": 0
         }
       },
@@ -2151,30 +2151,6 @@
       ]
     },
     {
-      "code": "CR",
-      "name": "Costa Rica",
-      "lat": 10.065,
-      "lon": -84.078,
-      "source_addresses": 117,
-      "source_reports": 9142,
-      "persistence_days": 215.6496,
-      "host_observations": 2,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 2
-        },
-        "dshield": {
-          "source_addresses": 117,
-          "source_reports": 9142,
-          "observations": 0
-        }
-      },
-      "types": [
-        "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
       "code": "CI",
       "name": "Ivory Coast",
       "lat": 7.491,
@@ -2191,6 +2167,30 @@
         }
       },
       "types": [
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "CR",
+      "name": "Costa Rica",
+      "lat": 10.065,
+      "lon": -84.078,
+      "source_addresses": 116,
+      "source_reports": 8797,
+      "persistence_days": 217.5086,
+      "host_observations": 2,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 2
+        },
+        "dshield": {
+          "source_addresses": 116,
+          "source_reports": 8797,
+          "observations": 0
+        }
+      },
+      "types": [
+        "drop-listing",
         "sensor-source"
       ]
     },
@@ -2219,14 +2219,14 @@
       "name": "Qatar",
       "lat": 25.237,
       "lon": 51.144,
-      "source_addresses": 110,
-      "source_reports": 70233,
-      "persistence_days": 175.1091,
+      "source_addresses": 107,
+      "source_reports": 69633,
+      "persistence_days": 180.0093,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 110,
-          "source_reports": 70233,
+          "source_addresses": 107,
+          "source_reports": 69633,
           "observations": 0
         }
       },
@@ -2279,21 +2279,41 @@
       ]
     },
     {
+      "code": "PA",
+      "name": "Panama",
+      "lat": 8.722,
+      "lon": -80.352,
+      "source_addresses": 100,
+      "source_reports": 1150664,
+      "persistence_days": 300.21,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 100,
+          "source_reports": 1150664,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
       "code": "EE",
       "name": "Estonia",
       "lat": 58.725,
       "lon": 25.867,
-      "source_addresses": 103,
-      "source_reports": 319331,
-      "persistence_days": 153.2039,
+      "source_addresses": 99,
+      "source_reports": 274969,
+      "persistence_days": 159.2525,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
           "observations": 2
         },
         "dshield": {
-          "source_addresses": 103,
-          "source_reports": 319331,
+          "source_addresses": 99,
+          "source_reports": 274969,
           "observations": 0
         }
       },
@@ -2304,38 +2324,18 @@
       ]
     },
     {
-      "code": "PA",
-      "name": "Panama",
-      "lat": 8.722,
-      "lon": -80.352,
-      "source_addresses": 101,
-      "source_reports": 1160786,
-      "persistence_days": 297.2871,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 101,
-          "source_reports": 1160786,
-          "observations": 0
-        }
-      },
-      "types": [
-        "sensor-source"
-      ]
-    },
-    {
       "code": "MA",
       "name": "Morocco",
       "lat": 31.651,
       "lon": -7.187,
-      "source_addresses": 93,
-      "source_reports": 130633,
-      "persistence_days": 278.6774,
+      "source_addresses": 92,
+      "source_reports": 130408,
+      "persistence_days": 281.7065,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 93,
-          "source_reports": 130633,
+          "source_addresses": 92,
+          "source_reports": 130408,
           "observations": 0
         }
       },
@@ -2348,14 +2348,14 @@
       "name": "Jordan",
       "lat": 30.805,
       "lon": 36.376,
-      "source_addresses": 90,
-      "source_reports": 6434,
-      "persistence_days": 316.0111,
+      "source_addresses": 89,
+      "source_reports": 6345,
+      "persistence_days": 319.5618,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 90,
-          "source_reports": 6434,
+          "source_addresses": 89,
+          "source_reports": 6345,
           "observations": 0
         }
       },
@@ -2368,17 +2368,17 @@
       "name": "Luxembourg",
       "lat": 49.734,
       "lon": 6.078,
-      "source_addresses": 85,
-      "source_reports": 338392,
-      "persistence_days": 184.0706,
+      "source_addresses": 84,
+      "source_reports": 332466,
+      "persistence_days": 186.1786,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 85,
-          "source_reports": 338392,
+          "source_addresses": 84,
+          "source_reports": 332466,
           "observations": 0
         }
       },
@@ -2393,8 +2393,8 @@
       "lat": 41.669,
       "lon": 74.533,
       "source_addresses": 83,
-      "source_reports": 12581,
-      "persistence_days": 274.012,
+      "source_reports": 11226,
+      "persistence_days": 274.0,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -2402,7 +2402,7 @@
         },
         "dshield": {
           "source_addresses": 83,
-          "source_reports": 12581,
+          "source_reports": 11226,
           "observations": 0
         }
       },
@@ -2436,14 +2436,14 @@
       "name": "Sri Lanka",
       "lat": 7.581,
       "lon": 80.705,
-      "source_addresses": 77,
-      "source_reports": 71093,
-      "persistence_days": 395.7532,
+      "source_addresses": 75,
+      "source_reports": 64728,
+      "persistence_days": 406.24,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 77,
-          "source_reports": 71093,
+          "source_addresses": 75,
+          "source_reports": 64728,
           "observations": 0
         }
       },
@@ -2458,7 +2458,7 @@
       "lon": -88.89,
       "source_addresses": 75,
       "source_reports": 54315,
-      "persistence_days": 125.5333,
+      "persistence_days": 125.52,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2556,39 +2556,19 @@
       "name": "Cyprus",
       "lat": 34.913,
       "lon": 33.084,
-      "source_addresses": 66,
-      "source_reports": 82339,
-      "persistence_days": 352.3485,
+      "source_addresses": 65,
+      "source_reports": 25426,
+      "persistence_days": 357.7538,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 66,
-          "source_reports": 82339,
+          "source_addresses": 65,
+          "source_reports": 25426,
           "observations": 0
         }
       },
       "types": [
         "asn-drop",
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "TJ",
-      "name": "Tajikistan",
-      "lat": 38.2,
-      "lon": 72.587,
-      "source_addresses": 64,
-      "source_reports": 17869,
-      "persistence_days": 220.0938,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 64,
-          "source_reports": 17869,
-          "observations": 0
-        }
-      },
-      "types": [
         "sensor-source"
       ]
     },
@@ -2605,6 +2585,26 @@
         "dshield": {
           "source_addresses": 63,
           "source_reports": 3642,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "TJ",
+      "name": "Tajikistan",
+      "lat": 38.2,
+      "lon": 72.587,
+      "source_addresses": 63,
+      "source_reports": 16653,
+      "persistence_days": 223.5397,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 63,
+          "source_reports": 16653,
           "observations": 0
         }
       },
@@ -2639,7 +2639,7 @@
       "lon": 113.556,
       "source_addresses": 59,
       "source_reports": 177594,
-      "persistence_days": 372.8814,
+      "persistence_days": 372.8644,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2798,14 +2798,14 @@
       "name": "Bahrain",
       "lat": 26.056,
       "lon": 50.555,
-      "source_addresses": 48,
-      "source_reports": 4045,
-      "persistence_days": 173.3958,
+      "source_addresses": 47,
+      "source_reports": 3247,
+      "persistence_days": 177.0426,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 48,
-          "source_reports": 4045,
+          "source_addresses": 47,
+          "source_reports": 3247,
           "observations": 0
         }
       },
@@ -3018,50 +3018,6 @@
       ]
     },
     {
-      "code": "UG",
-      "name": "Uganda",
-      "lat": 1.973,
-      "lon": 32.949,
-      "source_addresses": 36,
-      "source_reports": 17625,
-      "persistence_days": 396.1389,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 36,
-          "source_reports": 17625,
-          "observations": 0
-        }
-      },
-      "types": [
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "MU",
-      "name": "Mauritius",
-      "lat": -20.3,
-      "lon": 57.566,
-      "source_addresses": 35,
-      "source_reports": 185977,
-      "persistence_days": 333.8286,
-      "host_observations": 2,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 2
-        },
-        "dshield": {
-          "source_addresses": 35,
-          "source_reports": 185977,
-          "observations": 0
-        }
-      },
-      "types": [
-        "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
       "code": "LY",
       "name": "Libya",
       "lat": 26.639,
@@ -3078,6 +3034,50 @@
         }
       },
       "types": [
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "lat": 1.973,
+      "lon": 32.949,
+      "source_addresses": 35,
+      "source_reports": 17023,
+      "persistence_days": 407.3714,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 35,
+          "source_reports": 17023,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "lat": -20.3,
+      "lon": 57.566,
+      "source_addresses": 34,
+      "source_reports": 48369,
+      "persistence_days": 337.7941,
+      "host_observations": 2,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 2
+        },
+        "dshield": {
+          "source_addresses": 34,
+          "source_reports": 48369,
+          "observations": 0
+        }
+      },
+      "types": [
+        "drop-listing",
         "sensor-source"
       ]
     },
@@ -3126,14 +3126,14 @@
       "name": "Malta",
       "lat": 35.893,
       "lon": 14.433,
-      "source_addresses": 30,
-      "source_reports": 2818,
-      "persistence_days": 238.8,
+      "source_addresses": 29,
+      "source_reports": 2178,
+      "persistence_days": 247.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 30,
-          "source_reports": 2818,
+          "source_addresses": 29,
+          "source_reports": 2178,
           "observations": 0
         }
       },
@@ -3166,34 +3166,14 @@
       "name": "Senegal",
       "lat": 15.138,
       "lon": -14.779,
-      "source_addresses": 27,
-      "source_reports": 42189,
-      "persistence_days": 188.4444,
+      "source_addresses": 26,
+      "source_reports": 33658,
+      "persistence_days": 195.1538,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 27,
-          "source_reports": 42189,
-          "observations": 0
-        }
-      },
-      "types": [
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "BN",
-      "name": "Brunei",
-      "lat": 4.448,
-      "lon": 114.552,
-      "source_addresses": 24,
-      "source_reports": 10679,
-      "persistence_days": 297.7917,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 24,
-          "source_reports": 10679,
+          "source_addresses": 26,
+          "source_reports": 33658,
           "observations": 0
         }
       },
@@ -3214,6 +3194,26 @@
         "dshield": {
           "source_addresses": 24,
           "source_reports": 2467,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "BN",
+      "name": "Brunei",
+      "lat": 4.448,
+      "lon": 114.552,
+      "source_addresses": 23,
+      "source_reports": 4955,
+      "persistence_days": 310.6087,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 23,
+          "source_reports": 4955,
           "observations": 0
         }
       },
@@ -3387,26 +3387,6 @@
       ]
     },
     {
-      "code": "TM",
-      "name": "Turkmenistan",
-      "lat": 39.855,
-      "lon": 58.677,
-      "source_addresses": 13,
-      "source_reports": 455407,
-      "persistence_days": 209.0,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 13,
-          "source_reports": 455407,
-          "observations": 0
-        }
-      },
-      "types": [
-        "sensor-source"
-      ]
-    },
-    {
       "code": "MG",
       "name": "Madagascar",
       "lat": -18.628,
@@ -3427,18 +3407,18 @@
       ]
     },
     {
-      "code": "ER",
-      "name": "Eritrea",
-      "lat": 15.787,
-      "lon": 38.286,
-      "source_addresses": 11,
-      "source_reports": 1683147,
-      "persistence_days": 146.2727,
+      "code": "TM",
+      "name": "Turkmenistan",
+      "lat": 39.855,
+      "lon": 58.677,
+      "source_addresses": 12,
+      "source_reports": 265005,
+      "persistence_days": 224.5833,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 11,
-          "source_reports": 1683147,
+          "source_addresses": 12,
+          "source_reports": 265005,
           "observations": 0
         }
       },
@@ -3467,18 +3447,38 @@
       ]
     },
     {
+      "code": "ER",
+      "name": "Eritrea",
+      "lat": 15.787,
+      "lon": 38.286,
+      "source_addresses": 10,
+      "source_reports": 1676376,
+      "persistence_days": 159.7,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 10,
+          "source_reports": 1676376,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
       "code": "ME",
       "name": "Montenegro",
       "lat": 42.803,
       "lon": 19.144,
       "source_addresses": 10,
-      "source_reports": 12404,
-      "persistence_days": 216.3,
+      "source_reports": 4188,
+      "persistence_days": 216.2,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 10,
-          "source_reports": 12404,
+          "source_reports": 4188,
           "observations": 0
         }
       },
@@ -3620,13 +3620,13 @@
       "lat": 54.221,
       "lon": -4.53,
       "source_addresses": 9,
-      "source_reports": 24623,
-      "persistence_days": 133.4444,
+      "source_reports": 22322,
+      "persistence_days": 133.3333,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 9,
-          "source_reports": 24623,
+          "source_reports": 22322,
           "observations": 0
         }
       },
@@ -4195,26 +4195,6 @@
       ]
     },
     {
-      "code": "KM",
-      "name": "Comoros",
-      "lat": -11.728,
-      "lon": 43.318,
-      "source_addresses": 4,
-      "source_reports": 3055,
-      "persistence_days": 523.0,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 4,
-          "source_reports": 3055,
-          "observations": 0
-        }
-      },
-      "types": [
-        "sensor-source"
-      ]
-    },
-    {
       "code": "KY",
       "name": "Cayman Islands",
       "lat": 19.32,
@@ -4267,6 +4247,26 @@
         "dshield": {
           "source_addresses": 4,
           "source_reports": 777,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "lat": -11.728,
+      "lon": 43.318,
+      "source_addresses": 3,
+      "source_reports": 235,
+      "persistence_days": 696.0,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 3,
+          "source_reports": 235,
           "observations": 0
         }
       },
@@ -4482,7 +4482,7 @@
       "lon": -63.026,
       "source_addresses": 1,
       "source_reports": 15784,
-      "persistence_days": 160.0,
+      "persistence_days": 159.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4600,61 +4600,61 @@
     {
       "code": "US",
       "name": "United States of America",
-      "value": 43901,
+      "value": 42823,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "CN",
       "name": "People's Republic of China",
-      "value": 28172,
+      "value": 28096,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "CA",
       "name": "Canada",
-      "value": 7679,
+      "value": 7581,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "RU",
       "name": "Russia",
-      "value": 7265,
+      "value": 7238,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "PK",
       "name": "Pakistan",
-      "value": 6218,
+      "value": 6217,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "BR",
       "name": "Brazil",
-      "value": 5868,
+      "value": 5840,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "GB",
       "name": "United Kingdom",
-      "value": 5515,
+      "value": 5496,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "UA",
       "name": "Ukraine",
-      "value": 5446,
+      "value": 5433,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "AR",
       "name": "Argentina",
-      "value": 4837,
+      "value": 4835,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "NL",
       "name": "Netherlands",
-      "value": 4835,
+      "value": 4796,
       "metric": "DShield source addresses located in this country"
     }
   ],
@@ -4830,7 +4830,7 @@
   ],
   "severity_note": "Severity is a local triage heuristic derived from published feed fields (for example ThreatFox confidence, Feodo C2 role, or CISA ransomware use). It is not a vendor-assigned score.",
   "timeline": {
-    "end": "2026-11-15T07:14:11Z",
+    "end": "2026-11-15T14:49:31Z",
     "hours": 24,
     "buckets": [
       0,
@@ -6956,7 +6956,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://kuconlgzn.gitbook.io/us",
+      "title": "http://www.sscoinabaseggh.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -6978,7 +6978,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://kuconlogen16.gitbook.io/",
+      "title": "https://y8w2f1-1me006kno-arcadawebapps2.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7000,7 +7000,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://akshitofficials.github.io/Spotify-clone",
+      "title": "http://telquro-kxt-felqani-a3x8hq27.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7022,7 +7022,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://www.jah-delta.vercel.app/",
+      "title": "http://y8w2f1-arcadawebapps2.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7044,7 +7044,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://www.shopee-002.blogspot.com/",
+      "title": "http://instagram-login-page-mockup.amanda-vencimento.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7066,7 +7066,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://all4youherebux.blogspot.com/",
+      "title": "http://baqwrd.newlogjt.de5.net/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7088,7 +7088,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://thr-shopee227.blogspot.com/",
+      "title": "http://jtd64-1yp-0rr9-3sinb-23-09-2026-aa.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7110,7 +7110,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://shopee-inc2023.blogspot.com/",
+      "title": "http://marnavi-kxt-zenqumi-c2x8hk19.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7132,7 +7132,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://www.fxvfvbbvff.blogspot.com/",
+      "title": "https://sp19ct-nelo-biz-vura-kati.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7154,7 +7154,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://fxvfvbbvff.blogspot.com/",
+      "title": "http://metayasdogrulamasistemi.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7176,7 +7176,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://apple.absalomdonald.dpdns.org/",
+      "title": "https://terqelo-mpt-zanfavi-a8x1ka94.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7198,7 +7198,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://shopee7677.blogspot.com/",
+      "title": "http://muqm1-wxc-o6pe-qpyw7-10-09-2026-hh.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7220,7 +7220,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://www.shopee7677.blogspot.com/",
+      "title": "http://y8w2f1.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7242,7 +7242,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://netflixaccount119.blogspot.com/",
+      "title": "https://lorqumi-kxt-zemvani-r8t6hk42.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7264,7 +7264,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://m.coinbase-svip.com/h5/",
+      "title": "https://newlogjt.cc.cd/jp",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7286,7 +7286,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://bradsaidso.com/wp-includes/indcx.html",
+      "title": "https://www.facebook-pt.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7308,7 +7308,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://ebay-phone-number.blogspot.com/",
+      "title": "http://start-ledger-com-web-cdn.typedream.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7330,7 +7330,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://www.ebay-phone-number.blogspot.com/",
+      "title": "http://hadkjjjjjkoo.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7352,7 +7352,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://xfinifydattabasemeasureuxux.weebly.com/",
+      "title": "https://www.flhealthlicense-nu.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7374,7 +7374,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://www.roblox.com.et/users/4925259156/profile",
+      "title": "http://www.shopee0199.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7396,7 +7396,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://facebookaccountrecovery.blogspot.com/",
+      "title": "http://www.undian-shopeeid2020.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7418,7 +7418,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://www.r.oblox.com.et/users/3167626725/profile",
+      "title": "https://cfg.me/glfts",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7440,7 +7440,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://couriersplease.addliaz.com/",
+      "title": "https://www.undianshopee733.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7462,7 +7462,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://mr-rblox.blogspot.com/?m=1",
+      "title": "http://zovempira.pro/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7484,7 +7484,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://josebernardinogonza-pixel.github.io/trailer-flix-o-netflix-trailers",
+      "title": "http://veldipora.pro/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7506,7 +7506,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://shopee5588.blogspot.com/",
+      "title": "http://ximploreno.pro/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7528,7 +7528,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://policy-trust-assurance.onrender.com/help",
+      "title": "http://wemtorica.pro/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7550,7 +7550,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metacxc.vercel.app/Meta-for-business",
+      "title": "https://rc47d.m4n2.my/tw.html",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7572,7 +7572,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://reserv.paymnt.0auth.src.129-121-167-35.cpanel.site/secure-3/loginbaru?auth_max_open=0&ref=RQTpLwoVO1MsTC8mIBLs9Roe9UtyBaVIBXhuL9JoSutFG0OClwpcDBlVpqg8eL06t0umCbCi7NesQWviz3",
+      "title": "https://metaamfa-aq2j.vercel.app/Meta-for-business",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7594,7 +7594,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://meta-help-sspb.vercel.app/business-center",
+      "title": "https://meta-help-e1lg.vercel.app/Meta-for-business",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7616,7 +7616,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metafa-tbqi.vercel.app/meta",
+      "title": "https://sp20ct-qomik-biz-zunik-vadex.pages.dev/appeals/submit-appeal-form/return/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7638,7 +7638,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metams-wkiz.vercel.app/business-center",
+      "title": "https://darkieamazon.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7660,7 +7660,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://meta-s-ke5g.vercel.app/Meta-for-business",
+      "title": "https://meta-s-ke5g.vercel.app/business-center",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7682,7 +7682,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metamaa-m23h.vercel.app/business-center",
+      "title": "https://v9o6p-5p7vra-hm185i-ajzyd.pages.dev/appeals/submit-appeal-form/return/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7704,7 +7704,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaabs-9soc.vercel.app/Meta-for-business",
+      "title": "https://telquro-kxt-felqani-a3x8hq27.pages.dev/send_appeal_request",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7726,7 +7726,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://rare-aside-194164.framer.app/",
+      "title": "https://metavavc-bl2h.vercel.app/Meta-for-business",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7748,7 +7748,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metams-wkiz.vercel.app/meta",
+      "title": "https://metavac.vercel.app/meta",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7770,7 +7770,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaac-idqz.vercel.app/business-center",
+      "title": "https://marnavi-kxt-zenqumi-c2x8hk19.pages.dev/appeals/submit-appeal-form/return/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7792,7 +7792,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaamex.vercel.app/business-center",
+      "title": "https://meta-help-e1lg.vercel.app/business-center",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7814,7 +7814,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metava-rkkl.vercel.app/Meta-for-business",
+      "title": "https://metaamfa-aq2j.vercel.app/meta",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7836,7 +7836,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaabs-o8zj.vercel.app/business-center",
+      "title": "https://instagram-login-page-mockup-amanda-vencimento.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7858,7 +7858,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metavac.vercel.app/Meta-for-business",
+      "title": "https://mdfaizanomar-web.github.io/web-lab/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7880,7 +7880,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metafa-tbqi.vercel.app/Meta-for-business",
+      "title": "https://metaga-26tc.vercel.app/meta",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7902,7 +7902,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaga-tpyb.vercel.app/meta",
+      "title": "https://4zy-592d-39ov-nsfp-2fy-ofbs.pages.dev/send_appeal_request",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7924,7 +7924,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metams-wkiz.vercel.app/Meta-for-business",
+      "title": "http://www.beefmaster-germany.com/bank/scotia/login",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7946,7 +7946,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://meta-business-verification-network.vercel.app/meta",
+      "title": "https://steamcommunuty.cam/activatlon=Uot4Fbgs3aa",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7968,7 +7968,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metams-hc6o.vercel.app/Meta-for-business",
+      "title": "https://ur.link/glfts",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7990,7 +7990,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaac-idqz.vercel.app/meta",
+      "title": "http://www.roblox.com.ml/users/371628145627/profile",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8012,7 +8012,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metacas-i2a9.vercel.app/business-center",
+      "title": "http://contactiibk2026pe.one/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8034,7 +8034,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://meta-help-7fgi.vercel.app/Meta-for-business",
+      "title": "https://kuconlggn.gitbook.io/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8056,7 +8056,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metavac.vercel.app/business-center",
+      "title": "http://www.layanan-hadiah89.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8078,7 +8078,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metafca-3q8h.vercel.app/Meta-for-business",
+      "title": "http://www.instagram-clone-mrsamia.vercel.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8100,7 +8100,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metamaa-m23h.vercel.app/Meta-for-business",
+      "title": "https://www.roblox.ss/users/4364792509/profile",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8122,7 +8122,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://bluetick-aurorafb-1001.vercel.app/business-center",
+      "title": "http://katei.ddns.net/assistance/5047.html",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8144,7 +8144,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaamfa-aq2j.vercel.app/business-center",
+      "title": "http://lovely-cendol-b54b73.netlify.app/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8166,7 +8166,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metava-rkkl.vercel.app/meta",
+      "title": "https://vene2026personal.xyz/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8188,7 +8188,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metafca-3q8h.vercel.app/meta",
+      "title": "https://zqkmt73nlo-xp5w8rv-2j6d9g-bn314c.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8210,7 +8210,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://bluetick-aurorafb-1001.vercel.app/meta",
+      "title": "http://sp15ct-melrun-biz-kazex-vurlo.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8232,7 +8232,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metacas-75mn.vercel.app/Meta-for-business",
+      "title": "http://sp15ct-ravqax-biz-zalven-korli.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8254,7 +8254,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://roblox.com.pt/users/394249122074/profile",
+      "title": "https://qelqavi-mpt-farvuni-p5d7me96.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8276,7 +8276,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaamex.vercel.app/Meta-for-business",
+      "title": "http://lorquri-mpt-belfavi-a2h7ka83.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8298,7 +8298,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metacas-i2a9.vercel.app/meta",
+      "title": "https://lorzavo-mpt-farquri-c5d7me63.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8320,7 +8320,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://meta-help-sspb.vercel.app/Meta-for-business",
+      "title": "https://norzavo-mpt-felquro-p3d9me85.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8342,7 +8342,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaga-95da.vercel.app/Meta-for-business",
+      "title": "https://gjb2w-v0d-dsw5-hww4z-17-09-2026-hh.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8364,7 +8364,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metacas-i2a9.vercel.app/Meta-for-business",
+      "title": "http://sp15ct-nurqax-biz-vurzen-kelvi.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8386,7 +8386,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaac-idqz.vercel.app/Meta-for-business",
+      "title": "http://mavqelo-mpt-zurfavi-p9h3me68.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8408,7 +8408,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metacas-75mn.vercel.app/meta",
+      "title": "http://xvknq92pla-5m8w3zt-7j2d4g-rp615c.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8430,7 +8430,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://meta-help-e1lg.vercel.app/meta",
+      "title": "http://venqeri-mpt-lazmuro-r6x8pe41.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8452,7 +8452,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metams-hc6o.vercel.app/meta",
+      "title": "https://qelzelo-mpt-borvuri-p9d1me62.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8474,7 +8474,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaa-comma.vercel.app/business-center",
+      "title": "http://zerqavo-mpt-nulmeri-k8x2pe53.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8496,7 +8496,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaabs-o8zj.vercel.app/meta",
+      "title": "https://www.hollywingskencansekitar.blogspot.com/?m=1",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8518,7 +8518,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaa-comma.vercel.app/meta",
+      "title": "https://www.lcdgerliv.com/ledger/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8540,7 +8540,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metacas-75mn.vercel.app/business-center",
+      "title": "https://www.lcdgerliv.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8562,7 +8562,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaabs-o8zj.vercel.app/Meta-for-business",
+      "title": "http://www.ns2.egoodmalls.top/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8584,7 +8584,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaga-tpyb.vercel.app/Meta-for-business",
+      "title": "https://to.lk/cySujh",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8606,7 +8606,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metamaa-m23h.vercel.app/meta",
+      "title": "https://https-wvvw--roblox.co/users/703341600/profile",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8628,7 +8628,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metaga-95da.vercel.app/business-center",
+      "title": "http://mega-elektronik-77.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8650,7 +8650,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metams-byxw.vercel.app/Meta-for-business",
+      "title": "https://metamzklogc.gitbook.io/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8672,7 +8672,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://meta-business-verification-network.vercel.app/business-center",
+      "title": "http://bt-voiceeee.weebly.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8694,7 +8694,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://metams-hc6o.vercel.app/business-center",
+      "title": "https://roblox.com.bz/users/1669722119/profile",
       "observed_at": null,
       "ip": null,
       "country": null,
