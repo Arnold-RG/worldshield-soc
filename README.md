@@ -63,13 +63,6 @@ Use least privilege, documented trust boundaries and secret scanning. Never incl
 
 **Important:** This table defines the target quality process, not a claim that every check has passed. Kubernetes is optional and should be introduced only when real backend complexity and scale justify it.
 
-## Improvement roadmap
-
-1. Inventory actual UI controls and tested end-to-end workflows.
-2. Separate mock data from authenticated telemetry; define event schema and RBAC.
-3. Add CI lint/tests, SAST/dependency checks, API integration tests and deployment runbooks.
-4. Add observability, SLOs and incident drill before any live SOC use.
-
 ## Working on the project
 
 Keep changes small and reviewable. Update this README when commands or features change, attach test evidence to pull requests, maintain honest limitations and review licenses before adding assets. The repository owner approves release publication.
