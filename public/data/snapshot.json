@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated_at": "2026-11-20T07:20:12Z",
+  "generated_at": "2026-11-20T16:23:42Z",
   "label": "Near-real-time cached threat activity from public feeds",
   "cache_note": "This is a near-real-time cached snapshot built by the fetch job. It is not a live attack stream.",
   "simulated": false,
@@ -18,7 +18,7 @@
       "licence_url": "https://urlhaus.abuse.ch/api/",
       "role_note": "Recent malware URLs. A mapped country is the DB-IP country of an IP literal in the URL, not a victim.",
       "last_updated": null,
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": false,
       "error": "HTTPError: HTTP Error 410: Gone URLhaus now requires a free Auth-Key from https://auth.abuse.ch/. Set ABUSECH_AUTH_KEY to enable this feed. No key is committed.",
       "parsed_count": 0,
@@ -35,7 +35,7 @@
       "licence_url": "https://threatfox.abuse.ch/api/",
       "role_note": "Recent indicators. A mapped country is the DB-IP country of an IP literal in the indicator, not a victim.",
       "last_updated": null,
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": false,
       "error": "HTTPError: HTTP Error 410: Gone ThreatFox now requires a free Auth-Key from https://auth.abuse.ch/. Set ABUSECH_AUTH_KEY to enable this feed. No key is committed.",
       "parsed_count": 0,
@@ -52,7 +52,7 @@
       "licence_url": "https://feodotracker.abuse.ch/blocklist/",
       "role_note": "Botnet C2 addresses. The country is the one Feodo publishes for that address, not a victim country.",
       "last_updated": "2026-03-04T14:28:39Z",
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": true,
       "error": null,
       "parsed_count": 5,
@@ -69,8 +69,8 @@
       "licence": "Use only under the Spamhaus DROP terms. This cache attributes Spamhaus and does not resell the lists.",
       "licence_url": "https://www.spamhaus.org/drop/",
       "role_note": "Listed networks. Country is the DB-IP country of the network address, not a victim country. The file has one last-modified time, not a timestamp per network, so these rows are left out of the 24 hour chart.",
-      "last_updated": "2026-11-20T06:56:44Z",
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "last_updated": "2026-11-20T15:56:44Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": true,
       "error": null,
       "parsed_count": 1747,
@@ -89,7 +89,7 @@
       "licence_url": "https://isc.sans.edu/api/",
       "role_note": "Source addresses reported to DShield sensors, grouped by the country of the source. The target number in the API is a destination-address count, not a target country. SANS describes the country table as about the last 30 days and does not stamp each row. SANS ISC InfoCon at fetch time: green.",
       "last_updated": null,
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": true,
       "error": null,
       "parsed_count": 309,
@@ -106,7 +106,7 @@
       "licence_url": "https://sslbl.abuse.ch/blacklist/",
       "role_note": "IP addresses associated with malicious SSL certificates. A mapped country is the DB-IP country of the address, not a victim. The publisher marked this list deprecated in January 2025; an empty parse is reported honestly.",
       "last_updated": "2025-01-03T11:30:00Z",
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": true,
       "error": null,
       "parsed_count": 0,
@@ -122,11 +122,11 @@
       "licence": "Use only under the Spamhaus DROP terms. This cache attributes Spamhaus and does not resell the lists.",
       "licence_url": "https://www.spamhaus.org/drop/",
       "role_note": "Autonomous systems listed by Spamhaus ASN-DROP. These are network listings, not attack paths, and are not drawn as globe arcs.",
-      "last_updated": "2026-11-20T06:56:44Z",
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "last_updated": "2026-11-20T15:56:44Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": true,
       "error": null,
-      "parsed_count": 454,
+      "parsed_count": 455,
       "listed_count": 0
     },
     {
@@ -140,7 +140,7 @@
       "licence_url": "https://openphish.com/",
       "role_note": "Phishing URLs. A mapped country is the DB-IP country of an IP literal in the URL, not a victim. The file has no per-row timestamp, so these rows are left out of the 24 hour chart.",
       "last_updated": null,
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": true,
       "error": null,
       "parsed_count": 300,
@@ -157,7 +157,7 @@
       "licence_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "role_note": "Vulnerabilities CISA lists as known to be exploited. They are not placed on the globe.",
       "last_updated": "2026-11-18T19:17:41Z",
-      "fetched_at": "2026-11-20T07:20:12Z",
+      "fetched_at": "2026-11-20T16:23:42Z",
       "ok": true,
       "error": null,
       "parsed_count": 1786,
@@ -181,17 +181,17 @@
     "feodo": 5,
     "spamhaus": 1747,
     "sslbl": 0,
-    "asndrop": 454,
+    "asndrop": 455,
     "openphish": 300,
-    "dshield_source_addresses": 173172,
-    "dshield_source_reports": 567219617,
+    "dshield_source_addresses": 173176,
+    "dshield_source_reports": 571113204,
     "countries": 203,
     "kev": 1786,
     "kev_listed": 30,
     "kev_ransomware": 0,
     "listed_events": 175,
     "malware_families": 2,
-    "asns": 457,
+    "asns": 458,
     "feeds_ok": 7,
     "feeds_failed": 2,
     "feeds_total": 9
@@ -202,9 +202,9 @@
       "name": "United States of America",
       "lat": 39.538,
       "lon": -97.483,
-      "source_addresses": 41214,
-      "source_reports": 165615283,
-      "persistence_days": 330.7158,
+      "source_addresses": 41216,
+      "source_reports": 165781284,
+      "persistence_days": 330.7019,
       "host_observations": 673,
       "by_feed": {
         "feodo": {
@@ -214,8 +214,8 @@
           "observations": 670
         },
         "dshield": {
-          "source_addresses": 41214,
-          "source_reports": 165615283,
+          "source_addresses": 41216,
+          "source_reports": 165781284,
           "observations": 0
         }
       },
@@ -258,8 +258,8 @@
       "lat": 60.324,
       "lon": -101.911,
       "source_addresses": 7190,
-      "source_reports": 36905241,
-      "persistence_days": 174.8268,
+      "source_reports": 38927819,
+      "persistence_days": 174.8302,
       "host_observations": 84,
       "by_feed": {
         "spamhaus": {
@@ -267,7 +267,7 @@
         },
         "dshield": {
           "source_addresses": 7190,
-          "source_reports": 36905241,
+          "source_reports": 38927819,
           "observations": 0
         }
       },
@@ -281,17 +281,17 @@
       "name": "Russia",
       "lat": 58.249,
       "lon": 44.686,
-      "source_addresses": 6067,
-      "source_reports": 9403270,
-      "persistence_days": 273.5909,
+      "source_addresses": 6064,
+      "source_reports": 8697928,
+      "persistence_days": 273.7139,
       "host_observations": 49,
       "by_feed": {
         "spamhaus": {
           "observations": 49
         },
         "dshield": {
-          "source_addresses": 6067,
-          "source_reports": 9403270,
+          "source_addresses": 6064,
+          "source_reports": 8697928,
           "observations": 0
         }
       },
@@ -331,9 +331,9 @@
       "name": "United Kingdom",
       "lat": 54.403,
       "lon": -2.116,
-      "source_addresses": 5314,
-      "source_reports": 30009342,
-      "persistence_days": 483.1191,
+      "source_addresses": 5313,
+      "source_reports": 29210306,
+      "persistence_days": 483.2046,
       "host_observations": 107,
       "by_feed": {
         "feodo": {
@@ -343,8 +343,8 @@
           "observations": 106
         },
         "dshield": {
-          "source_addresses": 5314,
-          "source_reports": 30009342,
+          "source_addresses": 5313,
+          "source_reports": 29210306,
           "observations": 0
         }
       },
@@ -411,8 +411,8 @@
       "lat": 52.422,
       "lon": 5.611,
       "source_addresses": 4543,
-      "source_reports": 62081226,
-      "persistence_days": 260.4926,
+      "source_reports": 62948808,
+      "persistence_days": 260.4944,
       "host_observations": 76,
       "by_feed": {
         "spamhaus": {
@@ -420,7 +420,7 @@
         },
         "dshield": {
           "source_addresses": 4543,
-          "source_reports": 62081226,
+          "source_reports": 62948808,
           "observations": 0
         }
       },
@@ -436,8 +436,8 @@
       "lat": 50.962,
       "lon": 9.678,
       "source_addresses": 4521,
-      "source_reports": 22719532,
-      "persistence_days": 265.3247,
+      "source_reports": 22859096,
+      "persistence_days": 265.324,
       "host_observations": 54,
       "by_feed": {
         "spamhaus": {
@@ -445,7 +445,7 @@
         },
         "dshield": {
           "source_addresses": 4521,
-          "source_reports": 22719532,
+          "source_reports": 22859096,
           "observations": 0
         }
       },
@@ -510,17 +510,17 @@
       "name": "France",
       "lat": 46.696,
       "lon": 2.552,
-      "source_addresses": 3291,
-      "source_reports": 45052503,
-      "persistence_days": 239.7332,
+      "source_addresses": 3292,
+      "source_reports": 46093710,
+      "persistence_days": 239.6771,
       "host_observations": 21,
       "by_feed": {
         "spamhaus": {
           "observations": 21
         },
         "dshield": {
-          "source_addresses": 3291,
-          "source_reports": 45052503,
+          "source_addresses": 3292,
+          "source_reports": 46093710,
           "observations": 0
         }
       },
@@ -562,7 +562,7 @@
       "lon": 138.442,
       "source_addresses": 2388,
       "source_reports": 4954223,
-      "persistence_days": 211.709,
+      "persistence_days": 211.7123,
       "host_observations": 90,
       "by_feed": {
         "feodo": {
@@ -634,17 +634,17 @@
       "name": "Hong Kong",
       "lat": 22.449,
       "lon": 114.098,
-      "source_addresses": 2051,
-      "source_reports": 6977667,
-      "persistence_days": 295.5558,
+      "source_addresses": 2050,
+      "source_reports": 6301952,
+      "persistence_days": 295.6093,
       "host_observations": 99,
       "by_feed": {
         "spamhaus": {
           "observations": 99
         },
         "dshield": {
-          "source_addresses": 2051,
-          "source_reports": 6977667,
+          "source_addresses": 2050,
+          "source_reports": 6301952,
           "observations": 0
         }
       },
@@ -659,17 +659,17 @@
       "name": "Singapore",
       "lat": 1.367,
       "lon": 103.817,
-      "source_addresses": 2011,
-      "source_reports": 11392343,
-      "persistence_days": 269.4247,
+      "source_addresses": 2010,
+      "source_reports": 11275011,
+      "persistence_days": 269.5567,
       "host_observations": 11,
       "by_feed": {
         "spamhaus": {
           "observations": 11
         },
         "dshield": {
-          "source_addresses": 2011,
-          "source_reports": 11392343,
+          "source_addresses": 2010,
+          "source_reports": 11275011,
           "observations": 0
         }
       },
@@ -734,8 +734,8 @@
       "lat": 46.719,
       "lon": 7.464,
       "source_addresses": 1444,
-      "source_reports": 7603196,
-      "persistence_days": 306.3331,
+      "source_reports": 7713955,
+      "persistence_days": 306.3345,
       "host_observations": 9,
       "by_feed": {
         "spamhaus": {
@@ -743,7 +743,7 @@
         },
         "dshield": {
           "source_addresses": 1444,
-          "source_reports": 7603196,
+          "source_reports": 7713955,
           "observations": 0
         }
       },
@@ -784,10 +784,10 @@
       "source_addresses": 1178,
       "source_reports": 726041,
       "persistence_days": 290.3973,
-      "host_observations": 20,
+      "host_observations": 21,
       "by_feed": {
         "spamhaus": {
-          "observations": 20
+          "observations": 21
         },
         "dshield": {
           "source_addresses": 1178,
@@ -1135,17 +1135,17 @@
       "name": "Philippines",
       "lat": 11.198,
       "lon": 122.465,
-      "source_addresses": 677,
-      "source_reports": 494327,
-      "persistence_days": 308.8006,
+      "source_addresses": 678,
+      "source_reports": 1170042,
+      "persistence_days": 308.6224,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 677,
-          "source_reports": 494327,
+          "source_addresses": 678,
+          "source_reports": 1170042,
           "observations": 0
         }
       },
@@ -1159,17 +1159,17 @@
       "name": "Bulgaria",
       "lat": 42.509,
       "lon": 25.157,
-      "source_addresses": 654,
-      "source_reports": 53482183,
-      "persistence_days": 203.945,
+      "source_addresses": 659,
+      "source_reports": 55242735,
+      "persistence_days": 202.7754,
       "host_observations": 7,
       "by_feed": {
         "spamhaus": {
           "observations": 7
         },
         "dshield": {
-          "source_addresses": 654,
-          "source_reports": 53482183,
+          "source_addresses": 659,
+          "source_reports": 55242735,
           "observations": 0
         }
       },
@@ -1186,7 +1186,7 @@
       "lon": 54.931,
       "source_addresses": 643,
       "source_reports": 1486937,
-      "persistence_days": 117.4712,
+      "persistence_days": 117.4743,
       "host_observations": 7,
       "by_feed": {
         "spamhaus": {
@@ -1416,17 +1416,17 @@
       "name": "Kazakhstan",
       "lat": 49.054,
       "lon": 68.686,
-      "source_addresses": 362,
-      "source_reports": 2218639,
-      "persistence_days": 349.8702,
+      "source_addresses": 361,
+      "source_reports": 951426,
+      "persistence_days": 350.7479,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
           "observations": 2
         },
         "dshield": {
-          "source_addresses": 362,
-          "source_reports": 2218639,
+          "source_addresses": 361,
+          "source_reports": 951426,
           "observations": 0
         }
       },
@@ -1602,14 +1602,14 @@
       "name": "Denmark",
       "lat": 55.967,
       "lon": 9.018,
-      "source_addresses": 283,
-      "source_reports": 7932896,
-      "persistence_days": 243.4735,
+      "source_addresses": 284,
+      "source_reports": 8533551,
+      "persistence_days": 242.6725,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 283,
-          "source_reports": 7932896,
+          "source_addresses": 284,
+          "source_reports": 8533551,
           "observations": 0
         }
       },
@@ -1688,14 +1688,14 @@
       "name": "Azerbaijan",
       "lat": 40.402,
       "lon": 47.211,
-      "source_addresses": 229,
-      "source_reports": 595774,
-      "persistence_days": 232.476,
+      "source_addresses": 230,
+      "source_reports": 621362,
+      "persistence_days": 231.8304,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 229,
-          "source_reports": 595774,
+          "source_addresses": 230,
+          "source_reports": 621362,
           "observations": 0
         }
       },
@@ -1828,7 +1828,7 @@
       "lat": -4.677,
       "lon": 55.48,
       "source_addresses": 187,
-      "source_reports": 2607061,
+      "source_reports": 2633536,
       "persistence_days": 128.2513,
       "host_observations": 21,
       "by_feed": {
@@ -1837,7 +1837,7 @@
         },
         "dshield": {
           "source_addresses": 187,
-          "source_reports": 2607061,
+          "source_reports": 2633536,
           "observations": 0
         }
       },
@@ -1855,10 +1855,10 @@
       "source_addresses": 175,
       "source_reports": 80526,
       "persistence_days": 532.9257,
-      "host_observations": 2,
+      "host_observations": 1,
       "by_feed": {
         "spamhaus": {
-          "observations": 2
+          "observations": 1
         },
         "dshield": {
           "source_addresses": 175,
@@ -2156,13 +2156,13 @@
       "lat": 7.491,
       "lon": -5.569,
       "source_addresses": 112,
-      "source_reports": 213586,
+      "source_reports": 235135,
       "persistence_days": 128.2768,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 112,
-          "source_reports": 213586,
+          "source_reports": 235135,
           "observations": 0
         }
       },
@@ -4600,7 +4600,7 @@
     {
       "code": "US",
       "name": "United States of America",
-      "value": 41214,
+      "value": 41216,
       "metric": "DShield source addresses located in this country"
     },
     {
@@ -4618,7 +4618,7 @@
     {
       "code": "RU",
       "name": "Russia",
-      "value": 6067,
+      "value": 6064,
       "metric": "DShield source addresses located in this country"
     },
     {
@@ -4630,7 +4630,7 @@
     {
       "code": "GB",
       "name": "United Kingdom",
-      "value": 5314,
+      "value": 5313,
       "metric": "DShield source addresses located in this country"
     },
     {
@@ -4830,7 +4830,7 @@
   ],
   "severity_note": "Severity is a local triage heuristic derived from published feed fields (for example ThreatFox confidence, Feodo C2 role, or CISA ransomware use). It is not a vendor-assigned score.",
   "timeline": {
-    "end": "2026-11-20T07:20:12Z",
+    "end": "2026-11-20T16:23:42Z",
     "hours": 24,
     "buckets": [
       0,
@@ -6956,7 +6956,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://argocts.com/wwa/pplch/index.php",
+      "title": "https://metamaskdiuxtension.gitbook.io/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -6978,7 +6978,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://ozanguner.com/BinasaIndustial/Access/",
+      "title": "https://cn.145manx.com/home/forbidden",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7000,7 +7000,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://mydpd.pmsml.cc/track-ch",
+      "title": "https://my-site-108476-100627.weeblysite.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7022,7 +7022,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://mydpd.mzqdp.xyz/track-ch",
+      "title": "http://gemini-sailing-charters.square.site/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7044,7 +7044,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://mydpd.hwtrd.top/track-ch",
+      "title": "http://app.kucoin108.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7066,7 +7066,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://info-recap-2.kimi.page/",
+      "title": "https://www.supportcrpt-client.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7088,7 +7088,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://mydpd.kiaxf.xyz/track-ch",
+      "title": "https://beton88-pikir.homes/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7110,7 +7110,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://jardinsdubandiat-onmicrosoft.click/",
+      "title": "https://cz-facebook.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7132,7 +7132,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://dhyehdhje.jimdofree.com/",
+      "title": "https://perrydoom7-hub.github.io/chatbot/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7154,7 +7154,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://hiremedicals.com/contact/login.php",
+      "title": "https://gjdhdjhjhas.square.site/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7176,7 +7176,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://upgov.net/images/z1dpeth/-/louwhan1/pages/login.php",
+      "title": "http://wmsalves.github.io/projetoNetflixLogin",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7198,7 +7198,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://chipper-profiterole-06b105.netlify.app/",
+      "title": "https://udise.emanyatapune.org/Z00M.US.MEET1NG.CALENDER/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7220,7 +7220,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://bas.api.usps.zda.com/",
+      "title": "https://att-10page.weeblysite.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7242,7 +7242,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://f005.backblazeb2.com/file/olaxxx/bellwebmailcadch4se.html",
+      "title": "http://calm-queen-ea5a.filevis174.workers.dev/signin",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7264,7 +7264,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://akarshagrahari143.github.io/web-clg-Amazon",
+      "title": "http://nptxq84nlo-6m3w9zk-2j7d5g-rv518b.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7286,7 +7286,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://vinted.id653655.shop/219249488",
+      "title": "http://carbaascopeiataa.square.site/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7308,7 +7308,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://drumhilldentalcom.qusteto-document-qpr-39948589.workers.dev/",
+      "title": "http://thrjjdfvjn.weebly.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7330,7 +7330,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://login-att-verification-page.weeblysite.com/",
+      "title": "https://d2sisrr9r7t0z4.cloudfront.net/gx/index.html?phone=%2B1-888-902-2787",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7352,7 +7352,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://cn.81mbetx.com/home/register/",
+      "title": "https://d3ha0drt130222.cloudfront.net/gx/index.html?phone=%2B1-888-902-2787",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7374,7 +7374,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://aaa-105662.square.site/",
+      "title": "https://www.roblox.com.ss/games/142823291/Murder-Mystery-2?privateServerLinkCode=99121229223932217370452874768764",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7396,7 +7396,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://zarnel-privex-biz-holvik-santor-fdp1912.pages.dev/form_submit_appeal/appeals/submit-appeal-form/return",
+      "title": "http://ssl.au.biezacefaktury.pl/education_redirect_second?8c5781c2-7b1e-4035-b1d7-990e269e5380",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7418,7 +7418,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://secure-document.stanives.cfd/non/?shem=aimgspe",
+      "title": "http://ssl.au.biezacefaktury.pl/secure/training/6422c2/8c5781c2-7b1e-4035-b1d7-990e269e5380",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7440,7 +7440,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://magazineluizaofertas.vercel.app/",
+      "title": "https://at-t-currently-com-mail.square.site/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7462,7 +7462,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://hello-world-polished-art-59d3.yabeveh153.workers.dev/",
+      "title": "http://echalin.men/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7484,7 +7484,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://auth-secure.me/E.QosOI5XpaE4bLdQ",
+      "title": "https://inv-verify-0bd1a2772e30b33c.lange-view.workers.dev/?_rsc=1&path=%2F&_=1795168882132&hash=cxnkqwoj",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7506,7 +7506,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://allegro.centrumorientacji.pl/",
+      "title": "http://attww-107020.weeblysite.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7528,7 +7528,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://security-server-stat-75wj.bolt.host/",
+      "title": "http://m.105633000.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7550,7 +7550,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://mulutat-app.netlify.app/",
+      "title": "http://xflnitycomcast.weebly.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7572,7 +7572,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://cwohofa2h4.wpdns.site/making/track/track.php",
+      "title": "https://pusatshopee12-12.blogspot.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7594,7 +7594,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://hrex275-byte.github.io/ANOTHER-APPEAL/",
+      "title": "https://id77857981.info/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7616,7 +7616,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://app-conbase.pro/login/exchange/index.php",
+      "title": "http://135461223.site/ru/398/65a9aee1-0f61-481c-84b6-9e33e820c828/67958",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7638,7 +7638,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://webdisk.62-171-154-219.cprapid.com/secure-3/loginbaru?auth_max_open=0&ref=pqkGpxAaoh9vJBBY2lbmKNRIZntL7L0I83fR8FNa52dfA48cYAaxHtCxrQP9cD6nQRwNMXvbaYu2JOjGnRWbXLC8G3pVHdIT1O",
+      "title": "http://currently-att-8-5-2024.weeblysite.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7660,7 +7660,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://www.roblox.com.ss/users/1035100812/profile",
+      "title": "http://att-10010.square.site/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7682,7 +7682,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://is.gd/2ThA7u",
+      "title": "http://att-login-screen-107426.weeblysite.com/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7704,7 +7704,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://sp28ct5-nelzaro-biz-kavmuri-16a.pages.dev/",
+      "title": "http://pttuyettrang.github.io/meo/index.html",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7726,7 +7726,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://zqmkp739-5w8n2xt-4j6d3g-rv9215.pages.dev/",
+      "title": "https://roblox.com.bz/games/77182599101794/4nn1s-Place?privateServerLinkCode=34378996570340205930479482084227",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7748,7 +7748,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://yki1a-utc-ln7s-ew9tc-22-09-2026-aa.pages.dev/",
+      "title": "http://att-10223.square.site/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7770,7 +7770,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://sp28ct11-zemkaro-biz-vulrani.pages.dev/",
+      "title": "http://genkinka-rank.net/auth-dire/MM/Wallet.html",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7792,7 +7792,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://bervani-gld-felquza-p9t2fc35.pages.dev/",
+      "title": "https://facebook.ekteder.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7814,7 +7814,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://sp28ct11-lavkuni-biz-demzaro.pages.dev/",
+      "title": "https://www.roblox.com.ss/users/1413659486/profile",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7836,7 +7836,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://2cahp-hns-85xd-m02fb-23-09-2026-aa.pages.dev/",
+      "title": "https://asterion-eclipse-67cf.s2506083.workers.dev/analysis_workspace/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7858,7 +7858,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://xenfaro-mpt-zumqeli-h4d8ka93.pages.dev/",
+      "title": "https://factors-potential-c565.876-2019.workers.dev/Horizon_Decision_Desk/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7880,7 +7880,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://3niak-bn54n8fi-26qu-9cmtinn-6xs06g-5wbk9.pages.dev/",
+      "title": "https://pubgtest01.blogspot.com/?m=1",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7902,7 +7902,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://5webn-345-vy0h-akjdo-21-09-2026-aa.pages.dev/",
+      "title": "https://www.tokeupockct.pro/security",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7924,7 +7924,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://kmwa0-tdq-vidl-cedcv-23-09-2026-aa.pages.dev/",
+      "title": "https://resl0vedexxxiceiy.com/walletpage.html",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7946,7 +7946,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://sp28ct11-kavrozi-biz-melvaku.pages.dev/",
+      "title": "https://corroboration-astral-279b.s2485091.workers.dev/Review_Access_Gateway/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7968,7 +7968,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://kn81c-r59-fh1q-w82y2-23-09-2026-aa.pages.dev/",
+      "title": "https://sp28ct5-zorkelo-biz-ravmari.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -7990,7 +7990,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://sp32ct-xunem-biz-pavik-zurel.pages.dev/",
+      "title": "https://bgrfd92mlo-xk7q31-vp5n84-z6j2-55o.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8012,7 +8012,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://h2r8w6c1-z9m4p7-k3x0v5n8-q1.pages.dev/",
+      "title": "http://wktpx838mj-zjmrbren-9b2e6f-tn811a.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8034,7 +8034,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://0j1j9rp-g1bfw5-pi1peu-ezh7p4v5-4c1dn61.pages.dev/",
+      "title": "http://vplrx92kmt-hw7c5zn-3k8j1d-bq529w.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8056,7 +8056,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://kvmqn86nlo-4p7w2xt-9j3d5g-rp621g.pages.dev/",
+      "title": "https://2mfi3g0-358692422-ccuxuqoziy-500a3-qqy-9100784l.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8078,7 +8078,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://1mjwi-8fp-rwg1-3ac5x-21-09-2026-aa.pages.dev/",
+      "title": "http://sp25ct11-dulzuni-biz-kelmori.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8100,7 +8100,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://hla-8u6-7759gp-k1a-khcq-kgt6q.pages.dev/",
+      "title": "http://zunmero-mpt-vuqfari-k7d2pe94.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8122,7 +8122,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://sp28ct5-vemrani-biz-zulkaro.pages.dev/",
+      "title": "http://w3k9x1m-62804-q7v5.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8144,7 +8144,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://sp28ct5-ravzelo-biz-kundavo.pages.dev/",
+      "title": "http://kptxq71mza-4n8j2w-rq6d9k-zm315v-dzp.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8166,7 +8166,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://nlkjk-kqt-x7pt-v6f17-20-09-2026-hh.pages.dev/",
+      "title": "https://0p7n4x9-583126-k2m8.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8188,7 +8188,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://7ty5s-0bf-o0dr-5cjmv-22-09-2026-aa.pages.dev/",
+      "title": "http://sp28ct5-varkelo-biz-nelmari.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8210,7 +8210,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://9eli9-ws9-e4cz-3qisj-22-09-2026-aa.pages.dev/",
+      "title": "http://sp28ct5-zulvani-biz-mavkori.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8232,7 +8232,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://femkaro-morvaki-pixa28ct11-nuvmari-hdsga-kjfea-wqad.pages.dev/",
+      "title": "https://sp28ct5-nuvkelo-biz-zarmari.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8254,7 +8254,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://vormela-gld-lentora-c5v3dk96.pages.dev/",
+      "title": "https://7x2m9q4-v1k6n8p-30581742-z5.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8276,7 +8276,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://dgo1f-y0j-clwf-d751c-23-09-2026-aa.pages.dev/",
+      "title": "https://cbdsh4150lk-gfnzppli-3ce98c-cbd73c.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8298,7 +8298,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://mcwy9-5gw-ha0m-yzrtc-23-09-2026-aa.pages.dev/",
+      "title": "http://sp28ct5-mavzelo-biz-kundori.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8320,7 +8320,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://sp32ct-wunav-biz-kurel-zopik.pages.dev/",
+      "title": "http://852407196-qx8m3v-nk5p2z-41.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8342,7 +8342,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://gfjqp-0r6-ruev-anyg7-22-09-2026-aa.pages.dev/",
+      "title": "https://r660m-deu-opvq-u5tw1-22-09-2026-aa.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8364,7 +8364,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://sp28ct5-dulmari-biz-zorkuni.pages.dev/",
+      "title": "http://k2v7m4q-85031-x9n6.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8386,7 +8386,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://t6qh5-ya2-4afg-pxpc5-22-09-2026-aa.pages.dev/",
+      "title": "http://vtqpl24hwu-zxcnh38fyn-2u7t5g-yl399c.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8408,7 +8408,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://sp32ct-junem-biz-varek-zotel.pages.dev/",
+      "title": "http://995362851-817185189-1065-wea7.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8430,7 +8430,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://sp28ct11-kormelo-biz-zavdani.pages.dev/",
+      "title": "https://xrz-1933221-24uq2cg-uozc9s.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8452,7 +8452,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://8tsn-czphh9-92o9n-teh4oo721-y1na5bw.pages.dev/",
+      "title": "https://378-cnhwhxckkx-eg840oo6-c9gppgrrq.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8474,7 +8474,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://belmora-zunvako-pixa28ct11-kavmelo-hukad-kfhad-dsff.pages.dev/",
+      "title": "https://nqvtx73mlo-kz8p21w-x5j4d9-rv632.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8496,7 +8496,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://sp32ct-qorem-biz-vurik-zatik.pages.dev/",
+      "title": "https://06n-99290281-63437570-54503323-626145403.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8518,7 +8518,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://4fyp7-yub-vpmj-5a5ii-22-09-2026-aa.pages.dev/",
+      "title": "https://5820417-vq9x2m6-k1p8.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8540,7 +8540,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://wqptm96nlo-8m3w5zt-2j7d4g-rv619q.pages.dev/",
+      "title": "http://8q5m2x7-v1n9k4p-36280715-z6.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8562,7 +8562,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://sp28ct11-nuvrilo-biz-zarkavo.pages.dev/",
+      "title": "http://sp28ct5-zulrako-biz-kavmelo.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8584,7 +8584,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://c02jp7849-1em6r374-59dyfrh-sz3e3eb-qq73h30qc.pages.dev/",
+      "title": "https://qkzvt619-8m3w5xp-2j7d4g-rn921c-93n.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8606,7 +8606,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://yxd1h-m4u-5x06-964zv-21-09-2026-aa.pages.dev/",
+      "title": "http://t7v2j-5tp-gk29-49spp-21-09-2026-aa.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8628,7 +8628,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://norzeta-gld-felquna-p9t2fc37.pages.dev/",
+      "title": "https://vorf-krami-zuln-918-plov-mastro-grib-204.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8650,7 +8650,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://wfs4d-mpu-ezo9-t9cjn-23-09-2026-aa.pages.dev/",
+      "title": "https://sp28ct5-vaznelo-biz-kavzuni.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8672,7 +8672,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "https://qwy92-fqr-uadn-xtyw4-23-09-2026-aa.pages.dev/",
+      "title": "http://kgfbj-ayk-fhib-dtg1b-21-09-2026-hh.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
@@ -8694,7 +8694,7 @@
     {
       "feed": "openphish",
       "threat_type": "phishing",
-      "title": "http://6kclu-1ms-58s5-wfl7f-23-09-2026-aa.pages.dev/",
+      "title": "http://sp28ct5-kavmelo-biz-zurnavi.pages.dev/",
       "observed_at": null,
       "ip": null,
       "country": null,
