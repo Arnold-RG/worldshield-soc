@@ -1,17 +1,17 @@
 # WorldShield SOC report
 
-- Report generated: 2026-11-23T10:49:18Z (rule-based analyst).
-- Snapshot generated: 2026-11-23T10:49:09Z.
+- Report generated: 2026-11-23T22:40:27Z (rule-based analyst).
+- Snapshot generated: 2026-11-23T22:40:20Z.
 - Label: Near-real-time cached threat activity from public feeds.
 - This is a near-real-time cached snapshot built by the fetch job. It is not a live attack stream.
 
 ## Executive summary
 
-WorldShield SOC refreshed its public-feed cache at 2026-11-23T10:49:09Z. 7 of 9 feeds returned data. Figures below are counts from those cached parses, not a live detection stream.
-The parse includes 5 Feodo Tracker C2 addresses; 1,752 Spamhaus DROP networks; 460 ASN-DROP listings; 164,760 DShield source addresses (595,305,634 sensor reports, about the last 30 days); 1,790 CISA KEV catalog entries.
-The highest DShield source-address counts, by country of the source and not of a victim, are United States of America (39,899 source addresses), People's Republic of China (25,382 source addresses), Canada (6,862 source addresses), Pakistan (5,757 source addresses), Russia (5,461 source addresses).
+WorldShield SOC refreshed its public-feed cache at 2026-11-23T22:40:20Z. 7 of 9 feeds returned data. Figures below are counts from those cached parses, not a live detection stream.
+The parse includes 5 Feodo Tracker C2 addresses; 1,752 Spamhaus DROP networks; 460 ASN-DROP listings; 164,686 DShield source addresses (579,608,210 sensor reports, about the last 30 days); 1,792 CISA KEV catalog entries.
+The highest DShield source-address counts, by country of the source and not of a victim, are United States of America (39,889 source addresses), People's Republic of China (25,368 source addresses), Canada (6,859 source addresses), Pakistan (5,756 source addresses), Russia (5,459 source addresses).
 The most frequently tagged malware families in this cache are QakBot (4), Emotet (1).
-The newest CISA KEV entry in this cache is CVE-2026-129448 (Apache Roller Deserialization of Untrusted Data Vulnerability), added 2026-11-20.
+The newest CISA KEV entry in this cache is CVE-2026-133968 (Project MONAI MONAI Label Path Traversal Vulnerability), added 2026-11-23. 1 of the listed recent entries are tagged for known ransomware use.
 Feeds that did not return usable data in this run: abuse.ch URLhaus, abuse.ch ThreatFox. Treat those panels as stale.
 No fetched feed publishes a victim or target country, so this report does not rank target countries or draw attack paths.
 
@@ -24,13 +24,13 @@ Threat-type counts over the full parse, not only the 24-hour window: drop-listin
 ## Top threats
 
 **Source countries (DShield source addresses, about 30 days of sensor reports):**
-- United States of America (US): 39,899 — DShield source addresses located in this country.
-- People's Republic of China (CN): 25,382 — DShield source addresses located in this country.
-- Canada (CA): 6,862 — DShield source addresses located in this country.
-- Pakistan (PK): 5,757 — DShield source addresses located in this country.
-- Russia (RU): 5,461 — DShield source addresses located in this country.
-- United Kingdom (GB): 5,177 — DShield source addresses located in this country.
-- Brazil (BR): 4,635 — DShield source addresses located in this country.
+- United States of America (US): 39,889 — DShield source addresses located in this country.
+- People's Republic of China (CN): 25,368 — DShield source addresses located in this country.
+- Canada (CA): 6,859 — DShield source addresses located in this country.
+- Pakistan (PK): 5,756 — DShield source addresses located in this country.
+- Russia (RU): 5,459 — DShield source addresses located in this country.
+- United Kingdom (GB): 5,172 — DShield source addresses located in this country.
+- Brazil (BR): 4,636 — DShield source addresses located in this country.
 - Ukraine (UA): 4,567 — DShield source addresses located in this country.
 **Malware families (from tags the feeds themselves published):**
 - QakBot: 4 indicators in the full parse.
@@ -48,25 +48,26 @@ Threat-type counts over the full parse, not only the 24-hour window: drop-listin
 - AS6060 (MAGI-NET-GW, country US): 1 listings or indicators.
 **Local triage severity on parsed events:** high 1,757, medium 319, low 81. See the method section for how these labels are assigned.
 **Recent CISA Known Exploited Vulnerabilities (catalog dates, not exploit timestamps):**
+- CVE-2026-133968: Project MONAI MONAI Label Path Traversal Vulnerability (Project MONAI MONAI Label), added 2026-11-23, ransomware campaign use: Unknown.
+- CVE-2026-134624: N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability (N-able MailAssure), added 2026-11-23, ransomware campaign use: Unknown.
 - CVE-2026-129448: Apache Roller Deserialization of Untrusted Data Vulnerability (Apache Roller), added 2026-11-20, ransomware campaign use: Unknown.
 - CVE-2026-123890: VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability (Broadcom VMware vCenter), added 2026-11-20, ransomware campaign use: Unknown.
 - CVE-2025-42884: SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability (SAP NetWeaver), added 2026-11-20, ransomware campaign use: Unknown.
 - CVE-2026-76466: Cisco Expressway Series Use of Hard-coded Credentials Vulnerability (Cisco Expressway Series), added 2026-11-20, ransomware campaign use: Unknown.
-- CVE-2024-10441: Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability (Synology DiskStation Manager (DSM)), added 2026-11-18, ransomware campaign use: Unknown.
+- CVE-2024-10441: Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability (Synology DiskStation Manager (DSM)), added 2026-11-18, ransomware campaign use: Known.
 - CVE-2026-40217: BerriAI LiteLLM Unprotected Alternate Channel Vulnerability (BerriAI LiteLLM), added 2026-11-18, ransomware campaign use: Unknown.
-- CVE-2026-90817: Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability (Vanderbilt University Research Electronic Data Capture (REDCap)), added 2026-11-18, ransomware campaign use: Unknown.
-- CVE-2026-90436: Apache Axis Unsafe Reflection Vulnerability (Apache Axis), added 2026-11-18, ransomware campaign use: Unknown.
 
 ## Recommended actions
 
-1. Prioritize patching of the newest CISA KEV entries in this cache (CVE-2026-129448, CVE-2026-123890, CVE-2025-42884, CVE-2026-76466, CVE-2024-10441, CVE-2026-40217). Confirm exposure against local inventory before treating a CVE as relevant.
-2. Block Feodo Tracker C2 addresses at the perimeter and review outbound traffic to those hosts. The Feodo country field is the location of the C2 address, not a victim country.
-3. Apply Spamhaus DROP and ASN-DROP listings only under Spamhaus terms, and only as a network-control input. Do not republish the raw lists.
-4. Hunt in local telemetry for the malware families that appear most often in this cache: QakBot, Emotet. Family names are the ones the feeds published.
-5. Treat DShield country totals as sensor-reported source volume over about 30 days, not as a live attack count and not as attribution of a campaign to a government.
-6. Investigate the failed feed fetch(es) (urlhaus, threatfox) and do not make operational decisions from empty panels for those sources.
-7. Correlate every indicator with local logs before blocking or escalating. This cache is a near-real-time public-feed snapshot, not a substitute for internal detection.
-8. Do not draw source-to-target attack paths from this data: the fetched feeds do not name a target country.
+1. Prioritize patching of the newest CISA KEV entries in this cache (CVE-2026-133968, CVE-2026-134624, CVE-2026-129448, CVE-2026-123890, CVE-2025-42884, CVE-2026-76466). Confirm exposure against local inventory before treating a CVE as relevant.
+2. Give earlier attention to KEV items with known ransomware campaign use: CVE-2024-10441.
+3. Block Feodo Tracker C2 addresses at the perimeter and review outbound traffic to those hosts. The Feodo country field is the location of the C2 address, not a victim country.
+4. Apply Spamhaus DROP and ASN-DROP listings only under Spamhaus terms, and only as a network-control input. Do not republish the raw lists.
+5. Hunt in local telemetry for the malware families that appear most often in this cache: QakBot, Emotet. Family names are the ones the feeds published.
+6. Treat DShield country totals as sensor-reported source volume over about 30 days, not as a live attack count and not as attribution of a campaign to a government.
+7. Investigate the failed feed fetch(es) (urlhaus, threatfox) and do not make operational decisions from empty panels for those sources.
+8. Correlate every indicator with local logs before blocking or escalating. This cache is a near-real-time public-feed snapshot, not a substitute for internal detection.
+9. Do not draw source-to-target attack paths from this data: the fetched feeds do not name a target country.
 
 ## Method and caveats
 
