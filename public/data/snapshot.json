@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generated_at": "2026-11-23T01:59:24Z",
+  "generated_at": "2026-11-23T10:49:09Z",
   "label": "Near-real-time cached threat activity from public feeds",
   "cache_note": "This is a near-real-time cached snapshot built by the fetch job. It is not a live attack stream.",
   "simulated": false,
@@ -18,7 +18,7 @@
       "licence_url": "https://urlhaus.abuse.ch/api/",
       "role_note": "Recent malware URLs. A mapped country is the DB-IP country of an IP literal in the URL, not a victim.",
       "last_updated": null,
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": false,
       "error": "HTTPError: HTTP Error 410: Gone URLhaus now requires a free Auth-Key from https://auth.abuse.ch/. Set ABUSECH_AUTH_KEY to enable this feed. No key is committed.",
       "parsed_count": 0,
@@ -35,7 +35,7 @@
       "licence_url": "https://threatfox.abuse.ch/api/",
       "role_note": "Recent indicators. A mapped country is the DB-IP country of an IP literal in the indicator, not a victim.",
       "last_updated": null,
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": false,
       "error": "HTTPError: HTTP Error 410: Gone ThreatFox now requires a free Auth-Key from https://auth.abuse.ch/. Set ABUSECH_AUTH_KEY to enable this feed. No key is committed.",
       "parsed_count": 0,
@@ -52,7 +52,7 @@
       "licence_url": "https://feodotracker.abuse.ch/blocklist/",
       "role_note": "Botnet C2 addresses. The country is the one Feodo publishes for that address, not a victim country.",
       "last_updated": "2026-03-04T14:28:39Z",
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": true,
       "error": null,
       "parsed_count": 5,
@@ -69,8 +69,8 @@
       "licence": "Use only under the Spamhaus DROP terms. This cache attributes Spamhaus and does not resell the lists.",
       "licence_url": "https://www.spamhaus.org/drop/",
       "role_note": "Listed networks. Country is the DB-IP country of the network address, not a victim country. The file has one last-modified time, not a timestamp per network, so these rows are left out of the 24 hour chart.",
-      "last_updated": "2026-11-23T01:26:44Z",
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "last_updated": "2026-11-23T10:21:36Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": true,
       "error": null,
       "parsed_count": 1752,
@@ -89,7 +89,7 @@
       "licence_url": "https://isc.sans.edu/api/",
       "role_note": "Source addresses reported to DShield sensors, grouped by the country of the source. The target number in the API is a destination-address count, not a target country. SANS describes the country table as about the last 30 days and does not stamp each row. SANS ISC InfoCon at fetch time: green.",
       "last_updated": null,
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": true,
       "error": null,
       "parsed_count": 309,
@@ -106,7 +106,7 @@
       "licence_url": "https://sslbl.abuse.ch/blacklist/",
       "role_note": "IP addresses associated with malicious SSL certificates. A mapped country is the DB-IP country of the address, not a victim. The publisher marked this list deprecated in January 2025; an empty parse is reported honestly.",
       "last_updated": "2025-01-03T11:30:00Z",
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": true,
       "error": null,
       "parsed_count": 0,
@@ -122,11 +122,11 @@
       "licence": "Use only under the Spamhaus DROP terms. This cache attributes Spamhaus and does not resell the lists.",
       "licence_url": "https://www.spamhaus.org/drop/",
       "role_note": "Autonomous systems listed by Spamhaus ASN-DROP. These are network listings, not attack paths, and are not drawn as globe arcs.",
-      "last_updated": "2026-11-23T01:26:44Z",
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "last_updated": "2026-11-23T10:26:44Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": true,
       "error": null,
-      "parsed_count": 459,
+      "parsed_count": 460,
       "listed_count": 0
     },
     {
@@ -140,7 +140,7 @@
       "licence_url": "https://openphish.com/",
       "role_note": "Phishing URLs. A mapped country is the DB-IP country of an IP literal in the URL, not a victim. The file has no per-row timestamp, so these rows are left out of the 24 hour chart.",
       "last_updated": null,
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": true,
       "error": null,
       "parsed_count": 300,
@@ -157,7 +157,7 @@
       "licence_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "role_note": "Vulnerabilities CISA lists as known to be exploited. They are not placed on the globe.",
       "last_updated": "2026-11-20T17:48:39Z",
-      "fetched_at": "2026-11-23T01:59:24Z",
+      "fetched_at": "2026-11-23T10:49:09Z",
       "ok": true,
       "error": null,
       "parsed_count": 1790,
@@ -181,17 +181,17 @@
     "feodo": 5,
     "spamhaus": 1752,
     "sslbl": 0,
-    "asndrop": 459,
+    "asndrop": 460,
     "openphish": 300,
-    "dshield_source_addresses": 165078,
-    "dshield_source_reports": 604276681,
+    "dshield_source_addresses": 164760,
+    "dshield_source_reports": 595305634,
     "countries": 203,
     "kev": 1790,
     "kev_listed": 30,
     "kev_ransomware": 0,
     "listed_events": 175,
     "malware_families": 2,
-    "asns": 462,
+    "asns": 463,
     "feeds_ok": 7,
     "feeds_failed": 2,
     "feeds_total": 9
@@ -202,9 +202,9 @@
       "name": "United States of America",
       "lat": 39.538,
       "lon": -97.483,
-      "source_addresses": 39914,
-      "source_reports": 179041511,
-      "persistence_days": 339.2437,
+      "source_addresses": 39899,
+      "source_reports": 178583180,
+      "persistence_days": 339.9653,
       "host_observations": 674,
       "by_feed": {
         "feodo": {
@@ -214,8 +214,8 @@
           "observations": 671
         },
         "dshield": {
-          "source_addresses": 39914,
-          "source_reports": 179041511,
+          "source_addresses": 39899,
+          "source_reports": 178583180,
           "observations": 0
         }
       },
@@ -232,17 +232,17 @@
       "name": "People's Republic of China",
       "lat": 32.498,
       "lon": 106.337,
-      "source_addresses": 25373,
-      "source_reports": 11902381,
-      "persistence_days": 363.208,
+      "source_addresses": 25382,
+      "source_reports": 11978018,
+      "persistence_days": 363.8717,
       "host_observations": 103,
       "by_feed": {
         "spamhaus": {
           "observations": 103
         },
         "dshield": {
-          "source_addresses": 25373,
-          "source_reports": 11902381,
+          "source_addresses": 25382,
+          "source_reports": 11978018,
           "observations": 0
         }
       },
@@ -257,17 +257,17 @@
       "name": "Canada",
       "lat": 60.324,
       "lon": -101.911,
-      "source_addresses": 6861,
-      "source_reports": 41404423,
-      "persistence_days": 180.5321,
+      "source_addresses": 6862,
+      "source_reports": 41526087,
+      "persistence_days": 181.1714,
       "host_observations": 84,
       "by_feed": {
         "spamhaus": {
           "observations": 84
         },
         "dshield": {
-          "source_addresses": 6861,
-          "source_reports": 41404423,
+          "source_addresses": 6862,
+          "source_reports": 41526087,
           "observations": 0
         }
       },
@@ -282,8 +282,8 @@
       "lat": 29.328,
       "lon": 68.546,
       "source_addresses": 5757,
-      "source_reports": 4878146,
-      "persistence_days": 183.1133,
+      "source_reports": 4840346,
+      "persistence_days": 183.8326,
       "host_observations": 6,
       "by_feed": {
         "spamhaus": {
@@ -291,7 +291,7 @@
         },
         "dshield": {
           "source_addresses": 5757,
-          "source_reports": 4878146,
+          "source_reports": 4840346,
           "observations": 0
         }
       },
@@ -306,17 +306,17 @@
       "name": "Russia",
       "lat": 58.249,
       "lon": 44.686,
-      "source_addresses": 5462,
-      "source_reports": 9632011,
-      "persistence_days": 295.1831,
+      "source_addresses": 5461,
+      "source_reports": 9350237,
+      "persistence_days": 295.8656,
       "host_observations": 49,
       "by_feed": {
         "spamhaus": {
           "observations": 49
         },
         "dshield": {
-          "source_addresses": 5462,
-          "source_reports": 9632011,
+          "source_addresses": 5461,
+          "source_reports": 9350237,
           "observations": 0
         }
       },
@@ -331,9 +331,9 @@
       "name": "United Kingdom",
       "lat": 54.403,
       "lon": -2.116,
-      "source_addresses": 5176,
-      "source_reports": 30458296,
-      "persistence_days": 495.4749,
+      "source_addresses": 5177,
+      "source_reports": 30480168,
+      "persistence_days": 496.2204,
       "host_observations": 107,
       "by_feed": {
         "feodo": {
@@ -343,8 +343,8 @@
           "observations": 106
         },
         "dshield": {
-          "source_addresses": 5176,
-          "source_reports": 30458296,
+          "source_addresses": 5177,
+          "source_reports": 30480168,
           "observations": 0
         }
       },
@@ -361,8 +361,8 @@
       "lat": -12.099,
       "lon": -49.559,
       "source_addresses": 4635,
-      "source_reports": 6270566,
-      "persistence_days": 165.8606,
+      "source_reports": 6256284,
+      "persistence_days": 168.7717,
       "host_observations": 5,
       "by_feed": {
         "spamhaus": {
@@ -370,7 +370,7 @@
         },
         "dshield": {
           "source_addresses": 4635,
-          "source_reports": 6270566,
+          "source_reports": 6256284,
           "observations": 0
         }
       },
@@ -386,8 +386,8 @@
       "lat": 49.725,
       "lon": 32.141,
       "source_addresses": 4567,
-      "source_reports": 857799,
-      "persistence_days": 130.1058,
+      "source_reports": 867401,
+      "persistence_days": 130.8303,
       "host_observations": 20,
       "by_feed": {
         "spamhaus": {
@@ -395,7 +395,7 @@
         },
         "dshield": {
           "source_addresses": 4567,
-          "source_reports": 857799,
+          "source_reports": 867401,
           "observations": 0
         }
       },
@@ -410,17 +410,17 @@
       "name": "Germany",
       "lat": 50.962,
       "lon": 9.678,
-      "source_addresses": 4417,
-      "source_reports": 23577653,
-      "persistence_days": 271.0623,
+      "source_addresses": 4411,
+      "source_reports": 23419908,
+      "persistence_days": 272.0188,
       "host_observations": 56,
       "by_feed": {
         "spamhaus": {
           "observations": 56
         },
         "dshield": {
-          "source_addresses": 4417,
-          "source_reports": 23577653,
+          "source_addresses": 4411,
+          "source_reports": 23419908,
           "observations": 0
         }
       },
@@ -435,17 +435,17 @@
       "name": "Netherlands",
       "lat": 52.422,
       "lon": 5.611,
-      "source_addresses": 4370,
-      "source_reports": 61741414,
-      "persistence_days": 268.4032,
+      "source_addresses": 4367,
+      "source_reports": 61532446,
+      "persistence_days": 269.1488,
       "host_observations": 78,
       "by_feed": {
         "spamhaus": {
           "observations": 78
         },
         "dshield": {
-          "source_addresses": 4370,
-          "source_reports": 61741414,
+          "source_addresses": 4367,
+          "source_reports": 61532446,
           "observations": 0
         }
       },
@@ -462,7 +462,7 @@
       "lon": -64.173,
       "source_addresses": 4188,
       "source_reports": 454600,
-      "persistence_days": 119.5007,
+      "persistence_days": 120.127,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
@@ -485,17 +485,17 @@
       "name": "India",
       "lat": 22.687,
       "lon": 79.358,
-      "source_addresses": 3285,
-      "source_reports": 3420782,
-      "persistence_days": 304.8049,
+      "source_addresses": 3286,
+      "source_reports": 3468203,
+      "persistence_days": 305.2425,
       "host_observations": 30,
       "by_feed": {
         "spamhaus": {
           "observations": 30
         },
         "dshield": {
-          "source_addresses": 3285,
-          "source_reports": 3420782,
+          "source_addresses": 3286,
+          "source_reports": 3468203,
           "observations": 0
         }
       },
@@ -510,17 +510,17 @@
       "name": "France",
       "lat": 46.696,
       "lon": 2.552,
-      "source_addresses": 3147,
-      "source_reports": 46933141,
-      "persistence_days": 247.9682,
+      "source_addresses": 3144,
+      "source_reports": 46640918,
+      "persistence_days": 248.855,
       "host_observations": 21,
       "by_feed": {
         "spamhaus": {
           "observations": 21
         },
         "dshield": {
-          "source_addresses": 3147,
-          "source_reports": 46933141,
+          "source_addresses": 3144,
+          "source_reports": 46640918,
           "observations": 0
         }
       },
@@ -536,8 +536,8 @@
       "lat": 36.385,
       "lon": 128.13,
       "source_addresses": 2706,
-      "source_reports": 3247106,
-      "persistence_days": 287.4708,
+      "source_reports": 3248564,
+      "persistence_days": 287.9826,
       "host_observations": 12,
       "by_feed": {
         "spamhaus": {
@@ -545,7 +545,7 @@
         },
         "dshield": {
           "source_addresses": 2706,
-          "source_reports": 3247106,
+          "source_reports": 3248564,
           "observations": 0
         }
       },
@@ -561,8 +561,8 @@
       "lat": 36.143,
       "lon": 138.442,
       "source_addresses": 2228,
-      "source_reports": 4939548,
-      "persistence_days": 221.7074,
+      "source_reports": 4958686,
+      "persistence_days": 222.2801,
       "host_observations": 90,
       "by_feed": {
         "feodo": {
@@ -573,7 +573,7 @@
         },
         "dshield": {
           "source_addresses": 2228,
-          "source_reports": 4939548,
+          "source_reports": 4958686,
           "observations": 0
         }
       },
@@ -591,7 +591,7 @@
       "lon": 64.005,
       "source_addresses": 2168,
       "source_reports": 142469,
-      "persistence_days": 167.0152,
+      "persistence_days": 167.6808,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -610,8 +610,8 @@
       "lat": 39.345,
       "lon": 34.508,
       "source_addresses": 2060,
-      "source_reports": 20515040,
-      "persistence_days": 132.0714,
+      "source_reports": 20519165,
+      "persistence_days": 132.2553,
       "host_observations": 12,
       "by_feed": {
         "spamhaus": {
@@ -619,7 +619,7 @@
         },
         "dshield": {
           "source_addresses": 2060,
-          "source_reports": 20515040,
+          "source_reports": 20519165,
           "observations": 0
         }
       },
@@ -634,17 +634,17 @@
       "name": "Hong Kong",
       "lat": 22.449,
       "lon": 114.098,
-      "source_addresses": 1969,
-      "source_reports": 7472008,
-      "persistence_days": 306.0345,
+      "source_addresses": 1968,
+      "source_reports": 7452874,
+      "persistence_days": 306.9959,
       "host_observations": 99,
       "by_feed": {
         "spamhaus": {
           "observations": 99
         },
         "dshield": {
-          "source_addresses": 1969,
-          "source_reports": 7472008,
+          "source_addresses": 1968,
+          "source_reports": 7452874,
           "observations": 0
         }
       },
@@ -659,17 +659,17 @@
       "name": "Singapore",
       "lat": 1.367,
       "lon": 103.817,
-      "source_addresses": 1920,
-      "source_reports": 11405265,
-      "persistence_days": 278.6026,
+      "source_addresses": 1914,
+      "source_reports": 10964876,
+      "persistence_days": 280.1196,
       "host_observations": 11,
       "by_feed": {
         "spamhaus": {
           "observations": 11
         },
         "dshield": {
-          "source_addresses": 1920,
-          "source_reports": 11405265,
+          "source_addresses": 1914,
+          "source_reports": 10964876,
           "observations": 0
         }
       },
@@ -686,7 +686,7 @@
       "lon": 101.893,
       "source_addresses": 1648,
       "source_reports": 2503694,
-      "persistence_days": 290.5516,
+      "persistence_days": 291.0934,
       "host_observations": 10,
       "by_feed": {
         "spamhaus": {
@@ -710,8 +710,8 @@
       "lat": 23.652,
       "lon": 120.868,
       "source_addresses": 1473,
-      "source_reports": 1284264,
-      "persistence_days": 269.4644,
+      "source_reports": 1293742,
+      "persistence_days": 270.0516,
       "host_observations": 5,
       "by_feed": {
         "spamhaus": {
@@ -719,7 +719,7 @@
         },
         "dshield": {
           "source_addresses": 1473,
-          "source_reports": 1284264,
+          "source_reports": 1293742,
           "observations": 0
         }
       },
@@ -733,17 +733,17 @@
       "name": "Switzerland",
       "lat": 46.719,
       "lon": 7.464,
-      "source_addresses": 1394,
-      "source_reports": 7896154,
-      "persistence_days": 316.594,
+      "source_addresses": 1392,
+      "source_reports": 7649448,
+      "persistence_days": 317.6307,
       "host_observations": 9,
       "by_feed": {
         "spamhaus": {
           "observations": 9
         },
         "dshield": {
-          "source_addresses": 1394,
-          "source_reports": 7896154,
+          "source_addresses": 1392,
+          "source_reports": 7649448,
           "observations": 0
         }
       },
@@ -758,8 +758,8 @@
       "lat": 65.859,
       "lon": 19.017,
       "source_addresses": 1346,
-      "source_reports": 2445850,
-      "persistence_days": 248.8611,
+      "source_reports": 2406383,
+      "persistence_days": 249.4874,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
@@ -767,7 +767,7 @@
         },
         "dshield": {
           "source_addresses": 1346,
-          "source_reports": 2445850,
+          "source_reports": 2406383,
           "observations": 0
         }
       },
@@ -782,8 +782,8 @@
       "lat": 2.529,
       "lon": 113.837,
       "source_addresses": 1130,
-      "source_reports": 725408,
-      "persistence_days": 300.9248,
+      "source_reports": 723495,
+      "persistence_days": 301.7743,
       "host_observations": 21,
       "by_feed": {
         "spamhaus": {
@@ -791,7 +791,7 @@
         },
         "dshield": {
           "source_addresses": 1130,
-          "source_reports": 725408,
+          "source_reports": 723495,
           "observations": 0
         }
       },
@@ -805,17 +805,17 @@
       "name": "Vietnam",
       "lat": 21.715,
       "lon": 105.387,
-      "source_addresses": 1105,
-      "source_reports": 2289695,
-      "persistence_days": 400.7367,
+      "source_addresses": 1103,
+      "source_reports": 2280351,
+      "persistence_days": 401.8767,
       "host_observations": 9,
       "by_feed": {
         "spamhaus": {
           "observations": 9
         },
         "dshield": {
-          "source_addresses": 1105,
-          "source_reports": 2289695,
+          "source_addresses": 1103,
+          "source_reports": 2280351,
           "observations": 0
         }
       },
@@ -831,8 +831,8 @@
       "lat": 23.92,
       "lon": -102.289,
       "source_addresses": 1044,
-      "source_reports": 709377,
-      "persistence_days": 203.7462,
+      "source_reports": 714481,
+      "persistence_days": 204.3649,
       "host_observations": 11,
       "by_feed": {
         "spamhaus": {
@@ -840,7 +840,7 @@
         },
         "dshield": {
           "source_addresses": 1044,
-          "source_reports": 709377,
+          "source_reports": 714481,
           "observations": 0
         }
       },
@@ -854,17 +854,17 @@
       "name": "Spain",
       "lat": 40.091,
       "lon": -3.465,
-      "source_addresses": 1022,
-      "source_reports": 671093,
-      "persistence_days": 198.0205,
+      "source_addresses": 1021,
+      "source_reports": 675706,
+      "persistence_days": 198.6895,
       "host_observations": 13,
       "by_feed": {
         "spamhaus": {
           "observations": 13
         },
         "dshield": {
-          "source_addresses": 1022,
-          "source_reports": 671093,
+          "source_addresses": 1021,
+          "source_reports": 675706,
           "observations": 0
         }
       },
@@ -880,8 +880,8 @@
       "lat": 24.215,
       "lon": 89.685,
       "source_addresses": 946,
-      "source_reports": 497205,
-      "persistence_days": 184.2008,
+      "source_reports": 411324,
+      "persistence_days": 184.8615,
       "host_observations": 8,
       "by_feed": {
         "spamhaus": {
@@ -889,7 +889,7 @@
         },
         "dshield": {
           "source_addresses": 946,
-          "source_reports": 497205,
+          "source_reports": 411324,
           "observations": 0
         }
       },
@@ -906,7 +906,7 @@
       "lon": -73.174,
       "source_addresses": 922,
       "source_reports": 190665,
-      "persistence_days": 180.526,
+      "persistence_days": 181.2213,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -930,7 +930,7 @@
       "lon": 21.726,
       "source_addresses": 880,
       "source_reports": 653573,
-      "persistence_days": 211.2364,
+      "persistence_days": 212.2989,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -949,8 +949,8 @@
       "lat": -24.13,
       "lon": 134.05,
       "source_addresses": 848,
-      "source_reports": 1757907,
-      "persistence_days": 209.1663,
+      "source_reports": 1760859,
+      "persistence_days": 209.8231,
       "host_observations": 10,
       "by_feed": {
         "spamhaus": {
@@ -958,7 +958,7 @@
         },
         "dshield": {
           "source_addresses": 848,
-          "source_reports": 1757907,
+          "source_reports": 1760859,
           "observations": 0
         }
       },
@@ -974,7 +974,7 @@
       "lon": -90.497,
       "source_addresses": 825,
       "source_reports": 32747,
-      "persistence_days": 111.6788,
+      "persistence_days": 112.5455,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -992,17 +992,17 @@
       "name": "South Africa",
       "lat": -29.709,
       "lon": 23.666,
-      "source_addresses": 749,
-      "source_reports": 510707,
-      "persistence_days": 214.7757,
+      "source_addresses": 750,
+      "source_reports": 679810,
+      "persistence_days": 215.4307,
       "host_observations": 22,
       "by_feed": {
         "spamhaus": {
           "observations": 22
         },
         "dshield": {
-          "source_addresses": 749,
-          "source_reports": 510707,
+          "source_addresses": 750,
+          "source_reports": 679810,
           "observations": 0
         }
       },
@@ -1019,7 +1019,7 @@
       "lon": -72.319,
       "source_addresses": 726,
       "source_reports": 245304,
-      "persistence_days": 174.0771,
+      "persistence_days": 174.6419,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
@@ -1044,7 +1044,7 @@
       "lon": 11.077,
       "source_addresses": 724,
       "source_reports": 2148953,
-      "persistence_days": 283.6022,
+      "persistence_days": 284.0456,
       "host_observations": 6,
       "by_feed": {
         "spamhaus": {
@@ -1068,13 +1068,13 @@
       "lat": 39.607,
       "lon": -8.272,
       "source_addresses": 680,
-      "source_reports": 1263982,
-      "persistence_days": 463.8824,
+      "source_reports": 1267159,
+      "persistence_days": 464.7,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 680,
-          "source_reports": 1263982,
+          "source_reports": 1267159,
           "observations": 0
         }
       },
@@ -1089,7 +1089,7 @@
       "lon": -64.599,
       "source_addresses": 671,
       "source_reports": 83611,
-      "persistence_days": 185.1997,
+      "persistence_days": 185.6319,
       "host_observations": 4,
       "by_feed": {
         "spamhaus": {
@@ -1111,17 +1111,17 @@
       "name": "Bulgaria",
       "lat": 42.509,
       "lon": 25.157,
-      "source_addresses": 669,
-      "source_reports": 67934661,
-      "persistence_days": 200.2257,
+      "source_addresses": 640,
+      "source_reports": 64218587,
+      "persistence_days": 208.0672,
       "host_observations": 7,
       "by_feed": {
         "spamhaus": {
           "observations": 7
         },
         "dshield": {
-          "source_addresses": 669,
-          "source_reports": 67934661,
+          "source_addresses": 640,
+          "source_reports": 64218587,
           "observations": 0
         }
       },
@@ -1138,7 +1138,7 @@
       "lon": 122.465,
       "source_addresses": 630,
       "source_reports": 493199,
-      "persistence_days": 329.2206,
+      "persistence_days": 329.8508,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -1160,17 +1160,17 @@
       "name": "Iran",
       "lat": 32.166,
       "lon": 54.931,
-      "source_addresses": 602,
-      "source_reports": 1528898,
-      "persistence_days": 120.1096,
+      "source_addresses": 601,
+      "source_reports": 1411301,
+      "persistence_days": 121.1747,
       "host_observations": 6,
       "by_feed": {
         "spamhaus": {
           "observations": 6
         },
         "dshield": {
-          "source_addresses": 602,
-          "source_reports": 1528898,
+          "source_addresses": 601,
+          "source_reports": 1411301,
           "observations": 0
         }
       },
@@ -1187,7 +1187,7 @@
       "lon": 4.8,
       "source_addresses": 600,
       "source_reports": 587174,
-      "persistence_days": 333.1567,
+      "persistence_days": 333.4717,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -1211,8 +1211,8 @@
       "lat": 51.99,
       "lon": 19.49,
       "source_addresses": 589,
-      "source_reports": 882046,
-      "persistence_days": 176.8166,
+      "source_reports": 865562,
+      "persistence_days": 177.3294,
       "host_observations": 12,
       "by_feed": {
         "spamhaus": {
@@ -1220,32 +1220,12 @@
         },
         "dshield": {
           "source_addresses": 589,
-          "source_reports": 882046,
+          "source_reports": 865562,
           "observations": 0
         }
       },
       "types": [
         "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "DK",
-      "name": "Denmark",
-      "lat": 55.967,
-      "lon": 9.018,
-      "source_addresses": 532,
-      "source_reports": 11395284,
-      "persistence_days": 131.3891,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 532,
-          "source_reports": 11395284,
-          "observations": 0
-        }
-      },
-      "types": [
         "sensor-source"
       ]
     },
@@ -1256,7 +1236,7 @@
       "lon": 101.073,
       "source_addresses": 516,
       "source_reports": 680542,
-      "persistence_days": 399.6512,
+      "persistence_days": 400.2074,
       "host_observations": 6,
       "by_feed": {
         "spamhaus": {
@@ -1280,7 +1260,7 @@
       "lon": 37.908,
       "source_addresses": 467,
       "source_reports": 88297,
-      "persistence_days": 220.1777,
+      "persistence_days": 221.1927,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1299,8 +1279,8 @@
       "lat": 63.252,
       "lon": 27.276,
       "source_addresses": 452,
-      "source_reports": 652359,
-      "persistence_days": 304.0774,
+      "source_reports": 646637,
+      "persistence_days": 304.5973,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
@@ -1308,7 +1288,7 @@
         },
         "dshield": {
           "source_addresses": 452,
-          "source_reports": 652359,
+          "source_reports": 646637,
           "observations": 0
         }
       },
@@ -1322,17 +1302,17 @@
       "name": "Lithuania",
       "lat": 55.104,
       "lon": 24.09,
-      "source_addresses": 433,
-      "source_reports": 749784,
-      "persistence_days": 120.2171,
+      "source_addresses": 434,
+      "source_reports": 768522,
+      "persistence_days": 120.8986,
       "host_observations": 15,
       "by_feed": {
         "spamhaus": {
           "observations": 15
         },
         "dshield": {
-          "source_addresses": 433,
-          "source_reports": 749784,
+          "source_addresses": 434,
+          "source_reports": 768522,
           "observations": 0
         }
       },
@@ -1349,7 +1329,7 @@
       "lon": 29.446,
       "source_addresses": 430,
       "source_reports": 127578,
-      "persistence_days": 443.7977,
+      "persistence_days": 444.493,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1367,17 +1347,17 @@
       "name": "Romania",
       "lat": 45.733,
       "lon": 24.973,
-      "source_addresses": 417,
-      "source_reports": 6353196,
-      "persistence_days": 235.2158,
+      "source_addresses": 416,
+      "source_reports": 6233655,
+      "persistence_days": 236.3197,
       "host_observations": 19,
       "by_feed": {
         "spamhaus": {
           "observations": 19
         },
         "dshield": {
-          "source_addresses": 417,
-          "source_reports": 6353196,
+          "source_addresses": 416,
+          "source_reports": 6233655,
           "observations": 0
         }
       },
@@ -1394,7 +1374,7 @@
       "lon": 95.804,
       "source_addresses": 404,
       "source_reports": 299156,
-      "persistence_days": 120.599,
+      "persistence_days": 121.2896,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1412,17 +1392,17 @@
       "name": "Ecuador",
       "lat": -1.259,
       "lon": -78.188,
-      "source_addresses": 364,
-      "source_reports": 67777,
-      "persistence_days": 177.4808,
+      "source_addresses": 365,
+      "source_reports": 69538,
+      "persistence_days": 177.526,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
           "observations": 1
         },
         "dshield": {
-          "source_addresses": 364,
-          "source_reports": 67777,
+          "source_addresses": 365,
+          "source_reports": 69538,
           "observations": 0
         }
       },
@@ -1437,8 +1417,8 @@
       "lat": 49.054,
       "lon": 68.686,
       "source_addresses": 336,
-      "source_reports": 2252931,
-      "persistence_days": 365.6815,
+      "source_reports": 2286299,
+      "persistence_days": 366.253,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
@@ -1446,7 +1426,7 @@
         },
         "dshield": {
           "source_addresses": 336,
-          "source_reports": 2252931,
+          "source_reports": 2286299,
           "observations": 0
         }
       },
@@ -1463,7 +1443,7 @@
       "lon": -7.799,
       "source_addresses": 336,
       "source_reports": 191934,
-      "persistence_days": 294.8185,
+      "persistence_days": 295.3542,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1483,7 +1463,7 @@
       "lon": -70.654,
       "source_addresses": 297,
       "source_reports": 86449,
-      "persistence_days": 143.4983,
+      "persistence_days": 144.0842,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1502,8 +1482,8 @@
       "lat": 61.357,
       "lon": 9.68,
       "source_addresses": 289,
-      "source_reports": 694775,
-      "persistence_days": 256.3183,
+      "source_reports": 710960,
+      "persistence_days": 257.0311,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -1511,7 +1491,7 @@
         },
         "dshield": {
           "source_addresses": 289,
-          "source_reports": 694775,
+          "source_reports": 710960,
           "observations": 0
         }
       },
@@ -1527,7 +1507,7 @@
       "lon": 15.378,
       "source_addresses": 279,
       "source_reports": 389302,
-      "persistence_days": 216.9104,
+      "persistence_days": 217.5269,
       "host_observations": 4,
       "by_feed": {
         "spamhaus": {
@@ -1545,21 +1525,41 @@
       ]
     },
     {
+      "code": "DK",
+      "name": "Denmark",
+      "lat": 55.967,
+      "lon": 9.018,
+      "source_addresses": 278,
+      "source_reports": 8702513,
+      "persistence_days": 249.5827,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 278,
+          "source_reports": 8702513,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
       "code": "AE",
       "name": "United Arab Emirates",
       "lat": 23.466,
       "lon": 54.547,
-      "source_addresses": 278,
-      "source_reports": 1684788,
-      "persistence_days": 242.7338,
+      "source_addresses": 277,
+      "source_reports": 1445928,
+      "persistence_days": 244.1119,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
           "observations": 3
         },
         "dshield": {
-          "source_addresses": 278,
-          "source_reports": 1684788,
+          "source_addresses": 277,
+          "source_reports": 1445928,
           "observations": 0
         }
       },
@@ -1574,8 +1574,8 @@
       "lat": 47.087,
       "lon": 19.448,
       "source_addresses": 274,
-      "source_reports": 157200,
-      "persistence_days": 143.8869,
+      "source_reports": 162955,
+      "persistence_days": 144.5255,
       "host_observations": 4,
       "by_feed": {
         "spamhaus": {
@@ -1583,7 +1583,7 @@
         },
         "dshield": {
           "source_addresses": 274,
-          "source_reports": 157200,
+          "source_reports": 162955,
           "observations": 0
         }
       },
@@ -1599,7 +1599,7 @@
       "lon": 14.131,
       "source_addresses": 268,
       "source_reports": 311526,
-      "persistence_days": 305.1306,
+      "persistence_days": 305.653,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -1624,7 +1624,7 @@
       "lon": 43.736,
       "source_addresses": 265,
       "source_reports": 91411,
-      "persistence_days": 265.2491,
+      "persistence_days": 266.0943,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1644,7 +1644,7 @@
       "lon": 43.262,
       "source_addresses": 243,
       "source_reports": 151399,
-      "persistence_days": 216.2263,
+      "persistence_days": 217.2634,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -1667,14 +1667,14 @@
       "name": "Israel",
       "lat": 30.911,
       "lon": 34.848,
-      "source_addresses": 224,
-      "source_reports": 57814,
-      "persistence_days": 287.1027,
+      "source_addresses": 225,
+      "source_reports": 63312,
+      "persistence_days": 286.6356,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 224,
-          "source_reports": 57814,
+          "source_addresses": 225,
+          "source_reports": 63312,
           "observations": 0
         }
       },
@@ -1689,8 +1689,8 @@
       "lat": -39.759,
       "lon": 172.787,
       "source_addresses": 212,
-      "source_reports": 214027,
-      "persistence_days": 246.0802,
+      "source_reports": 216330,
+      "persistence_days": 246.9387,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
@@ -1698,7 +1698,7 @@
         },
         "dshield": {
           "source_addresses": 212,
-          "source_reports": 214027,
+          "source_reports": 216330,
           "observations": 0
         }
       },
@@ -1715,7 +1715,7 @@
       "lon": 7.503,
       "source_addresses": 211,
       "source_reports": 964183,
-      "persistence_days": 349.5118,
+      "persistence_days": 350.4076,
       "host_observations": 11,
       "by_feed": {
         "spamhaus": {
@@ -1738,14 +1738,14 @@
       "name": "Azerbaijan",
       "lat": 40.402,
       "lon": 47.211,
-      "source_addresses": 209,
-      "source_reports": 686947,
-      "persistence_days": 245.7464,
+      "source_addresses": 208,
+      "source_reports": 595478,
+      "persistence_days": 247.3317,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 209,
-          "source_reports": 686947,
+          "source_addresses": 208,
+          "source_reports": 595478,
           "observations": 0
         }
       },
@@ -1760,7 +1760,7 @@
       "lon": 28.488,
       "source_addresses": 207,
       "source_reports": 150576,
-      "persistence_days": 221.8502,
+      "persistence_days": 222.7633,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
@@ -1785,7 +1785,7 @@
       "lon": -72.9,
       "source_addresses": 198,
       "source_reports": 108497,
-      "persistence_days": 232.7929,
+      "persistence_days": 233.3333,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -1807,17 +1807,17 @@
       "name": "Seychelles",
       "lat": -4.677,
       "lon": 55.48,
-      "source_addresses": 185,
-      "source_reports": 2590829,
-      "persistence_days": 127.5946,
+      "source_addresses": 183,
+      "source_reports": 2629727,
+      "persistence_days": 129.1858,
       "host_observations": 21,
       "by_feed": {
         "spamhaus": {
           "observations": 21
         },
         "dshield": {
-          "source_addresses": 185,
-          "source_reports": 2590829,
+          "source_addresses": 183,
+          "source_reports": 2629727,
           "observations": 0
         }
       },
@@ -1834,7 +1834,7 @@
       "lon": 83.64,
       "source_addresses": 176,
       "source_reports": 24477,
-      "persistence_days": 220.8466,
+      "persistence_days": 221.6989,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1854,7 +1854,7 @@
       "lon": 9.008,
       "source_addresses": 171,
       "source_reports": 80185,
-      "persistence_days": 544.386,
+      "persistence_days": 544.807,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -1878,7 +1878,7 @@
       "lon": -60.146,
       "source_addresses": 162,
       "source_reports": 12527,
-      "persistence_days": 194.2654,
+      "persistence_days": 194.9383,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1898,7 +1898,7 @@
       "lon": 44.801,
       "source_addresses": 161,
       "source_reports": 118420,
-      "persistence_days": 300.4969,
+      "persistence_days": 301.4596,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1918,7 +1918,7 @@
       "lon": -64.593,
       "source_addresses": 154,
       "source_reports": 173534,
-      "persistence_days": 386.9156,
+      "persistence_days": 387.5909,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1936,42 +1936,18 @@
       "name": "Ethiopia",
       "lat": 8.033,
       "lon": 39.089,
-      "source_addresses": 149,
-      "source_reports": 101265,
-      "persistence_days": 388.2819,
+      "source_addresses": 147,
+      "source_reports": 75717,
+      "persistence_days": 393.6735,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 149,
-          "source_reports": 101265,
+          "source_addresses": 147,
+          "source_reports": 75717,
           "observations": 0
         }
       },
       "types": [
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "SA",
-      "name": "Saudi Arabia",
-      "lat": 23.807,
-      "lon": 44.7,
-      "source_addresses": 143,
-      "source_reports": 14572,
-      "persistence_days": 213.9091,
-      "host_observations": 1,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 1
-        },
-        "dshield": {
-          "source_addresses": 143,
-          "source_reports": 14572,
-          "observations": 0
-        }
-      },
-      "types": [
-        "drop-listing",
         "sensor-source"
       ]
     },
@@ -1982,7 +1958,7 @@
       "lon": -66.481,
       "source_addresses": 143,
       "source_reports": 11978,
-      "persistence_days": 177.6573,
+      "persistence_days": 178.6224,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -1996,13 +1972,37 @@
       ]
     },
     {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "lat": 23.807,
+      "lon": 44.7,
+      "source_addresses": 142,
+      "source_reports": 12351,
+      "persistence_days": 216.0634,
+      "host_observations": 1,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 1
+        },
+        "dshield": {
+          "source_addresses": 142,
+          "source_reports": 12351,
+          "observations": 0
+        }
+      },
+      "types": [
+        "drop-listing",
+        "sensor-source"
+      ]
+    },
+    {
       "code": "MN",
       "name": "Mongolia",
       "lat": 45.997,
       "lon": 104.15,
       "source_addresses": 137,
       "source_reports": 68619,
-      "persistence_days": 752.5985,
+      "persistence_days": 754.6934,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2022,7 +2022,7 @@
       "lon": 14.915,
       "source_addresses": 132,
       "source_reports": 314875,
-      "persistence_days": 167.5152,
+      "persistence_days": 167.9318,
       "host_observations": 4,
       "by_feed": {
         "spamhaus": {
@@ -2046,7 +2046,7 @@
       "lon": 2.808,
       "source_addresses": 130,
       "source_reports": 32766,
-      "persistence_days": 289.9769,
+      "persistence_days": 290.5231,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2066,7 +2066,7 @@
       "lon": 25.459,
       "source_addresses": 128,
       "source_reports": 179138,
-      "persistence_days": 259.6484,
+      "persistence_days": 260.0156,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -2091,7 +2091,7 @@
       "lon": 20.788,
       "source_addresses": 120,
       "source_reports": 33284,
-      "persistence_days": 279.925,
+      "persistence_days": 280.4083,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2111,13 +2111,13 @@
       "lat": 48.734,
       "lon": 19.05,
       "source_addresses": 120,
-      "source_reports": 176773,
-      "persistence_days": 182.7417,
+      "source_reports": 203698,
+      "persistence_days": 183.35,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 120,
-          "source_reports": 176773,
+          "source_reports": 203698,
           "observations": 0
         }
       },
@@ -2132,7 +2132,7 @@
       "lon": -5.569,
       "source_addresses": 106,
       "source_reports": 6978,
-      "persistence_days": 134.1887,
+      "persistence_days": 135.4906,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2152,7 +2152,7 @@
       "lon": -84.078,
       "source_addresses": 100,
       "source_reports": 8175,
-      "persistence_days": 243.5,
+      "persistence_days": 244.33,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
@@ -2176,7 +2176,7 @@
       "lon": -18.674,
       "source_addresses": 100,
       "source_reports": 445700,
-      "persistence_days": 229.31,
+      "persistence_days": 230.16,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2196,7 +2196,7 @@
       "lon": 20.114,
       "source_addresses": 97,
       "source_reports": 57956,
-      "persistence_days": 211.3299,
+      "persistence_days": 211.9794,
       "host_observations": 6,
       "by_feed": {
         "spamhaus": {
@@ -2221,7 +2221,7 @@
       "lon": 51.144,
       "source_addresses": 95,
       "source_reports": 62384,
-      "persistence_days": 190.3368,
+      "persistence_days": 190.6211,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2241,7 +2241,7 @@
       "lon": 104.505,
       "source_addresses": 94,
       "source_reports": 61801,
-      "persistence_days": 275.4574,
+      "persistence_days": 275.9468,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -2265,7 +2265,7 @@
       "lon": -80.352,
       "source_addresses": 90,
       "source_reports": 1147976,
-      "persistence_days": 324.5333,
+      "persistence_days": 324.9333,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2285,7 +2285,7 @@
       "lon": 36.376,
       "source_addresses": 84,
       "source_reports": 5776,
-      "persistence_days": 340.0119,
+      "persistence_days": 341.3095,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2305,7 +2305,7 @@
       "lon": -7.187,
       "source_addresses": 84,
       "source_reports": 116598,
-      "persistence_days": 301.5952,
+      "persistence_days": 302.1786,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2325,7 +2325,7 @@
       "lon": 25.867,
       "source_addresses": 81,
       "source_reports": 125198,
-      "persistence_days": 183.3086,
+      "persistence_days": 183.5926,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
@@ -2348,14 +2348,14 @@
       "name": "Belarus",
       "lat": 53.822,
       "lon": 28.418,
-      "source_addresses": 78,
-      "source_reports": 11150,
-      "persistence_days": 330.7564,
+      "source_addresses": 79,
+      "source_reports": 79083,
+      "persistence_days": 327.4177,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
-          "source_addresses": 78,
-          "source_reports": 11150,
+          "source_addresses": 79,
+          "source_reports": 79083,
           "observations": 0
         }
       },
@@ -2370,7 +2370,7 @@
       "lon": 6.078,
       "source_addresses": 77,
       "source_reports": 332133,
-      "persistence_days": 199.5065,
+      "persistence_days": 200.2338,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -2394,7 +2394,7 @@
       "lon": 74.533,
       "source_addresses": 75,
       "source_reports": 10964,
-      "persistence_days": 298.28,
+      "persistence_days": 298.72,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -2418,7 +2418,7 @@
       "lon": 80.705,
       "source_addresses": 70,
       "source_reports": 64394,
-      "persistence_days": 436.1571,
+      "persistence_days": 436.6143,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2438,7 +2438,7 @@
       "lon": 16.372,
       "source_addresses": 67,
       "source_reports": 41229,
-      "persistence_days": 182.194,
+      "persistence_days": 182.4328,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2458,7 +2458,7 @@
       "lon": 1.058,
       "source_addresses": 67,
       "source_reports": 3603,
-      "persistence_days": 115.8209,
+      "persistence_days": 116.3881,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2478,7 +2478,7 @@
       "lon": -88.89,
       "source_addresses": 66,
       "source_reports": 52429,
-      "persistence_days": 124.5606,
+      "persistence_days": 124.8788,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2498,7 +2498,7 @@
       "lon": 34.959,
       "source_addresses": 65,
       "source_reports": 40905,
-      "persistence_days": 199.9385,
+      "persistence_days": 200.8615,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2518,7 +2518,7 @@
       "lon": 33.084,
       "source_addresses": 59,
       "source_reports": 25294,
-      "persistence_days": 394.8644,
+      "persistence_days": 395.4576,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2539,7 +2539,7 @@
       "lon": 47.314,
       "source_addresses": 59,
       "source_reports": 13754,
-      "persistence_days": 349.3051,
+      "persistence_days": 351.0678,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2559,7 +2559,7 @@
       "lon": 57.337,
       "source_addresses": 59,
       "source_reports": 3573,
-      "persistence_days": 224.0169,
+      "persistence_days": 224.9661,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2579,7 +2579,7 @@
       "lon": -1.364,
       "source_addresses": 56,
       "source_reports": 3017,
-      "persistence_days": 104.7321,
+      "persistence_days": 105.4821,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2599,7 +2599,7 @@
       "lon": 15.9,
       "source_addresses": 56,
       "source_reports": 767,
-      "persistence_days": 108.0,
+      "persistence_days": 108.3214,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2619,7 +2619,7 @@
       "lon": 113.556,
       "source_addresses": 53,
       "source_reports": 177584,
-      "persistence_days": 416.4528,
+      "persistence_days": 416.6792,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2639,7 +2639,7 @@
       "lon": 35.291,
       "source_addresses": 53,
       "source_reports": 4304,
-      "persistence_days": 586.5094,
+      "persistence_days": 588.1321,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2659,7 +2659,7 @@
       "lon": 72.587,
       "source_addresses": 53,
       "source_reports": 16273,
-      "persistence_days": 260.3774,
+      "persistence_days": 260.8868,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2679,7 +2679,7 @@
       "lon": 12.473,
       "source_addresses": 52,
       "source_reports": 54661,
-      "persistence_days": 202.3269,
+      "persistence_days": 202.5577,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2699,7 +2699,7 @@
       "lon": -1.037,
       "source_addresses": 50,
       "source_reports": 59125,
-      "persistence_days": 204.48,
+      "persistence_days": 205.36,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2719,7 +2719,7 @@
       "lon": -55.967,
       "source_addresses": 47,
       "source_reports": 11051,
-      "persistence_days": 102.8085,
+      "persistence_days": 103.0426,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2739,7 +2739,7 @@
       "lon": -60.918,
       "source_addresses": 46,
       "source_reports": 8250,
-      "persistence_days": 159.4783,
+      "persistence_days": 160.6304,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2759,7 +2759,7 @@
       "lon": -86.888,
       "source_addresses": 45,
       "source_reports": 7685,
-      "persistence_days": 200.3778,
+      "persistence_days": 200.9556,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2779,7 +2779,7 @@
       "lon": 21.556,
       "source_addresses": 45,
       "source_reports": 46842,
-      "persistence_days": 282.8,
+      "persistence_days": 283.0222,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2799,7 +2799,7 @@
       "lon": 17.984,
       "source_addresses": 43,
       "source_reports": 12195,
-      "persistence_days": 170.2791,
+      "persistence_days": 170.4651,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2820,7 +2820,7 @@
       "lon": 20.861,
       "source_addresses": 42,
       "source_reports": 3399,
-      "persistence_days": 423.4762,
+      "persistence_days": 424.8333,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2840,7 +2840,7 @@
       "lon": 102.534,
       "source_addresses": 40,
       "source_reports": 5936,
-      "persistence_days": 399.45,
+      "persistence_days": 400.2,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2860,7 +2860,7 @@
       "lon": 50.555,
       "source_addresses": 38,
       "source_reports": 2705,
-      "persistence_days": 203.5,
+      "persistence_days": 204.1579,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2880,7 +2880,7 @@
       "lon": 24.179,
       "source_addresses": 36,
       "source_reports": 20442,
-      "persistence_days": 237.6944,
+      "persistence_days": 237.9722,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2900,7 +2900,7 @@
       "lon": -77.319,
       "source_addresses": 36,
       "source_reports": 1895,
-      "persistence_days": 288.6944,
+      "persistence_days": 290.2222,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2920,7 +2920,7 @@
       "lon": 32.949,
       "source_addresses": 34,
       "source_reports": 16857,
-      "persistence_days": 417.9118,
+      "persistence_days": 419.0882,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -2934,37 +2934,13 @@
       ]
     },
     {
-      "code": "MU",
-      "name": "Mauritius",
-      "lat": -20.3,
-      "lon": 57.566,
-      "source_addresses": 32,
-      "source_reports": 185873,
-      "persistence_days": 370.5625,
-      "host_observations": 2,
-      "by_feed": {
-        "spamhaus": {
-          "observations": 2
-        },
-        "dshield": {
-          "source_addresses": 32,
-          "source_reports": 185873,
-          "observations": 0
-        }
-      },
-      "types": [
-        "drop-listing",
-        "sensor-source"
-      ]
-    },
-    {
       "code": "BA",
       "name": "Bosnia and Herzegovina",
       "lat": 44.091,
       "lon": 18.068,
       "source_addresses": 32,
       "source_reports": 31705,
-      "persistence_days": 236.625,
+      "persistence_days": 236.7188,
       "host_observations": 1,
       "by_feed": {
         "spamhaus": {
@@ -2988,7 +2964,7 @@
       "lon": 35.993,
       "source_addresses": 32,
       "source_reports": 2372,
-      "persistence_days": 357.4375,
+      "persistence_days": 358.7813,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3008,7 +2984,7 @@
       "lon": 37.838,
       "source_addresses": 32,
       "source_reports": 10793,
-      "persistence_days": 345.875,
+      "persistence_days": 346.3125,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3022,13 +2998,37 @@
       ]
     },
     {
+      "code": "MU",
+      "name": "Mauritius",
+      "lat": -20.3,
+      "lon": 57.566,
+      "source_addresses": 31,
+      "source_reports": 48308,
+      "persistence_days": 376.9677,
+      "host_observations": 2,
+      "by_feed": {
+        "spamhaus": {
+          "observations": 2
+        },
+        "dshield": {
+          "source_addresses": 31,
+          "source_reports": 48308,
+          "observations": 0
+        }
+      },
+      "types": [
+        "drop-listing",
+        "sensor-source"
+      ]
+    },
+    {
       "code": "AF",
       "name": "Afghanistan",
       "lat": 34.164,
       "lon": 66.497,
       "source_addresses": 31,
       "source_reports": 25499,
-      "persistence_days": 290.3548,
+      "persistence_days": 290.9677,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3048,7 +3048,7 @@
       "lon": -85.069,
       "source_addresses": 31,
       "source_reports": 7969,
-      "persistence_days": 226.9032,
+      "persistence_days": 227.4839,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3068,7 +3068,7 @@
       "lon": 38.278,
       "source_addresses": 30,
       "source_reports": 18298,
-      "persistence_days": 245.8667,
+      "persistence_days": 246.1,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3088,7 +3088,7 @@
       "lon": 29.925,
       "source_addresses": 30,
       "source_reports": 19516,
-      "persistence_days": 296.2333,
+      "persistence_days": 296.5667,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3108,32 +3108,12 @@
       "lon": 14.433,
       "source_addresses": 28,
       "source_reports": 2177,
-      "persistence_days": 259.3214,
+      "persistence_days": 260.1786,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 28,
           "source_reports": 2177,
-          "observations": 0
-        }
-      },
-      "types": [
-        "sensor-source"
-      ]
-    },
-    {
-      "code": "SN",
-      "name": "Senegal",
-      "lat": 15.138,
-      "lon": -14.779,
-      "source_addresses": 24,
-      "source_reports": 38437,
-      "persistence_days": 202.125,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 24,
-          "source_reports": 38437,
           "observations": 0
         }
       },
@@ -3148,12 +3128,32 @@
       "lon": 30.104,
       "source_addresses": 23,
       "source_reports": 19544,
-      "persistence_days": 226.3043,
+      "persistence_days": 227.0435,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 23,
           "source_reports": 19544,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "lat": 15.138,
+      "lon": -14.779,
+      "source_addresses": 23,
+      "source_reports": 33535,
+      "persistence_days": 211.6957,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 23,
+          "source_reports": 33535,
           "observations": 0
         }
       },
@@ -3168,7 +3168,7 @@
       "lon": 26.395,
       "source_addresses": 23,
       "source_reports": 17673,
-      "persistence_days": 196.4348,
+      "persistence_days": 197.0435,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3188,7 +3188,7 @@
       "lon": 114.552,
       "source_addresses": 22,
       "source_reports": 4949,
-      "persistence_days": 329.5455,
+      "persistence_days": 330.3636,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3208,7 +3208,7 @@
       "lon": -77.147,
       "source_addresses": 22,
       "source_reports": 2400,
-      "persistence_days": 144.5455,
+      "persistence_days": 144.6818,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3228,7 +3228,7 @@
       "lon": 18.011,
       "source_addresses": 22,
       "source_reports": 15511,
-      "persistence_days": 185.3636,
+      "persistence_days": 186.2273,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3248,7 +3248,7 @@
       "lon": 73.508,
       "source_addresses": 17,
       "source_reports": 743,
-      "persistence_days": 444.9412,
+      "persistence_days": 447.2353,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3268,7 +3268,7 @@
       "lon": -68.921,
       "source_addresses": 15,
       "source_reports": 4487,
-      "persistence_days": 177.5333,
+      "persistence_days": 178.2667,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3289,7 +3289,7 @@
       "lon": 11.836,
       "source_addresses": 15,
       "source_reports": 1671,
-      "persistence_days": 215.4,
+      "persistence_days": 215.8667,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3309,7 +3309,7 @@
       "lon": 23.459,
       "source_addresses": 13,
       "source_reports": 4958,
-      "persistence_days": 108.8462,
+      "persistence_days": 109.0769,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3329,7 +3329,7 @@
       "lon": 7.398,
       "source_addresses": 13,
       "source_reports": 116443,
-      "persistence_days": 317.6923,
+      "persistence_days": 318.3077,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3369,7 +3369,7 @@
       "lon": 1.539,
       "source_addresses": 12,
       "source_reports": 15366,
-      "persistence_days": 131.5833,
+      "persistence_days": 132.75,
       "host_observations": 3,
       "by_feed": {
         "spamhaus": {
@@ -3387,33 +3387,13 @@
       ]
     },
     {
-      "code": "TM",
-      "name": "Turkmenistan",
-      "lat": 39.855,
-      "lon": 58.677,
-      "source_addresses": 12,
-      "source_reports": 486040,
-      "persistence_days": 223.5833,
-      "host_observations": 0,
-      "by_feed": {
-        "dshield": {
-          "source_addresses": 12,
-          "source_reports": 486040,
-          "observations": 0
-        }
-      },
-      "types": [
-        "sensor-source"
-      ]
-    },
-    {
       "code": "GY",
       "name": "Guyana",
       "lat": 5.124,
       "lon": -58.943,
       "source_addresses": 11,
       "source_reports": 618,
-      "persistence_days": 225.2727,
+      "persistence_days": 225.6364,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3433,12 +3413,32 @@
       "lon": 46.704,
       "source_addresses": 11,
       "source_reports": 978,
-      "persistence_days": 297.5455,
+      "persistence_days": 298.3636,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
           "source_addresses": 11,
           "source_reports": 978,
+          "observations": 0
+        }
+      },
+      "types": [
+        "sensor-source"
+      ]
+    },
+    {
+      "code": "TM",
+      "name": "Turkmenistan",
+      "lat": 39.855,
+      "lon": 58.677,
+      "source_addresses": 11,
+      "source_reports": 264996,
+      "persistence_days": 241.1818,
+      "host_observations": 0,
+      "by_feed": {
+        "dshield": {
+          "source_addresses": 11,
+          "source_reports": 264996,
           "observations": 0
         }
       },
@@ -3453,7 +3453,7 @@
       "lon": 38.286,
       "source_addresses": 10,
       "source_reports": 1676376,
-      "persistence_days": 174.5,
+      "persistence_days": 174.8,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3497,7 +3497,7 @@
       "lon": 42.499,
       "source_addresses": 9,
       "source_reports": 364,
-      "persistence_days": 221.4444,
+      "persistence_days": 222.1111,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3517,7 +3517,7 @@
       "lon": -4.53,
       "source_addresses": 9,
       "source_reports": 22322,
-      "persistence_days": 137.3333,
+      "persistence_days": 137.4444,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3537,7 +3537,7 @@
       "lon": 19.144,
       "source_addresses": 9,
       "source_reports": 4184,
-      "persistence_days": 240.7778,
+      "persistence_days": 241.5556,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3557,7 +3557,7 @@
       "lon": -55.911,
       "source_addresses": 9,
       "source_reports": 2275,
-      "persistence_days": 374.7778,
+      "persistence_days": 376.2222,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3577,7 +3577,7 @@
       "lon": 2.352,
       "source_addresses": 8,
       "source_reports": 376,
-      "persistence_days": 113.625,
+      "persistence_days": 115.625,
       "host_observations": 2,
       "by_feed": {
         "spamhaus": {
@@ -3601,7 +3601,7 @@
       "lon": -61.791,
       "source_addresses": 8,
       "source_reports": 1155,
-      "persistence_days": 81.875,
+      "persistence_days": 82.75,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3641,7 +3641,7 @@
       "lon": 33.608,
       "source_addresses": 8,
       "source_reports": 8659,
-      "persistence_days": 243.375,
+      "persistence_days": 243.625,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3661,7 +3661,7 @@
       "lon": -149.462,
       "source_addresses": 8,
       "source_reports": 341,
-      "persistence_days": 265.125,
+      "persistence_days": 265.375,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3681,7 +3681,7 @@
       "lon": 144.704,
       "source_addresses": 7,
       "source_reports": 807,
-      "persistence_days": 511.5714,
+      "persistence_days": 512.1429,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3701,7 +3701,7 @@
       "lon": -9.46,
       "source_addresses": 7,
       "source_reports": 743,
-      "persistence_days": 390.8571,
+      "persistence_days": 394.1429,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3721,7 +3721,7 @@
       "lon": 165.084,
       "source_addresses": 7,
       "source_reports": 536,
-      "persistence_days": 206.7143,
+      "persistence_days": 207.5714,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3741,7 +3741,7 @@
       "lon": -59.569,
       "source_addresses": 6,
       "source_reports": 198,
-      "persistence_days": 324.0,
+      "persistence_days": 325.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3761,7 +3761,7 @@
       "lon": 90.04,
       "source_addresses": 6,
       "source_reports": 299,
-      "persistence_days": 357.1667,
+      "persistence_days": 358.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3821,7 +3821,7 @@
       "lon": -69.973,
       "source_addresses": 5,
       "source_reports": 14168,
-      "persistence_days": 148.4,
+      "persistence_days": 149.4,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3841,7 +3841,7 @@
       "lon": -64.764,
       "source_addresses": 5,
       "source_reports": 2429,
-      "persistence_days": 125.8,
+      "persistence_days": 126.2,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3861,7 +3861,7 @@
       "lon": -9.74,
       "source_addresses": 5,
       "source_reports": 15604,
-      "persistence_days": 124.4,
+      "persistence_days": 125.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3881,7 +3881,7 @@
       "lon": 29.261,
       "source_addresses": 5,
       "source_reports": 777,
-      "persistence_days": 334.4,
+      "persistence_days": 334.8,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3901,7 +3901,7 @@
       "lon": -61.336,
       "source_addresses": 5,
       "source_reports": 1210,
-      "persistence_days": 106.6,
+      "persistence_days": 106.8,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3921,7 +3921,7 @@
       "lon": -77.976,
       "source_addresses": 4,
       "source_reports": 1242,
-      "persistence_days": 71.5,
+      "persistence_days": 71.75,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -3941,7 +3941,7 @@
       "lon": 177.975,
       "source_addresses": 4,
       "source_reports": 75,
-      "persistence_days": 141.25,
+      "persistence_days": 143.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4001,7 +4001,7 @@
       "lon": -72.224,
       "source_addresses": 4,
       "source_reports": 1148,
-      "persistence_days": 124.75,
+      "persistence_days": 125.25,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4021,7 +4021,7 @@
       "lon": -81.241,
       "source_addresses": 4,
       "source_reports": 296,
-      "persistence_days": 133.75,
+      "persistence_days": 134.25,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4041,7 +4041,7 @@
       "lon": -60.98,
       "source_addresses": 4,
       "source_reports": 1528,
-      "persistence_days": 64.5,
+      "persistence_days": 64.75,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4081,7 +4081,7 @@
       "lon": 31.467,
       "source_addresses": 4,
       "source_reports": 515,
-      "persistence_days": 257.5,
+      "persistence_days": 259.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4121,7 +4121,7 @@
       "lon": 29.917,
       "source_addresses": 3,
       "source_reports": 325,
-      "persistence_days": 603.0,
+      "persistence_days": 603.3333,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4141,7 +4141,7 @@
       "lon": -61.68,
       "source_addresses": 3,
       "source_reports": 72,
-      "persistence_days": 100.0,
+      "persistence_days": 100.3333,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4201,7 +4201,7 @@
       "lon": 8.99,
       "source_addresses": 3,
       "source_reports": 33,
-      "persistence_days": 95.6667,
+      "persistence_days": 96.3333,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4221,7 +4221,7 @@
       "lon": 43.318,
       "source_addresses": 3,
       "source_reports": 235,
-      "persistence_days": 703.0,
+      "persistence_days": 703.6667,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4241,7 +4241,7 @@
       "lon": 9.559,
       "source_addresses": 3,
       "source_reports": 474,
-      "persistence_days": 160.6667,
+      "persistence_days": 161.3333,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4261,7 +4261,7 @@
       "lon": 28.247,
       "source_addresses": 3,
       "source_reports": 790,
-      "persistence_days": 90.0,
+      "persistence_days": 90.3333,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4301,7 +4301,7 @@
       "lon": -61.345,
       "source_addresses": 2,
       "source_reports": 192,
-      "persistence_days": 477.5,
+      "persistence_days": 478.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4321,7 +4321,7 @@
       "lon": -2.09,
       "source_addresses": 2,
       "source_reports": 506,
-      "persistence_days": 285.0,
+      "persistence_days": 285.5,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4341,7 +4341,7 @@
       "lon": -62.758,
       "source_addresses": 2,
       "source_reports": 28,
-      "persistence_days": 64.5,
+      "persistence_days": 71.5,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4362,7 +4362,7 @@
       "lon": -63.049,
       "source_addresses": 2,
       "source_reports": 59,
-      "persistence_days": 164.5,
+      "persistence_days": 166.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4382,7 +4382,7 @@
       "lon": 9.504,
       "source_addresses": 2,
       "source_reports": 513,
-      "persistence_days": 315.5,
+      "persistence_days": 317.5,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4422,7 +4422,7 @@
       "lon": -63.07,
       "source_addresses": 2,
       "source_reports": 136,
-      "persistence_days": 337.5,
+      "persistence_days": 341.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4442,7 +4442,7 @@
       "lon": 18.645,
       "source_addresses": 2,
       "source_reports": 2232,
-      "persistence_days": 606.0,
+      "persistence_days": 606.5,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4462,7 +4462,7 @@
       "lon": -64.779,
       "source_addresses": 2,
       "source_reports": 1164,
-      "persistence_days": 312.5,
+      "persistence_days": 313.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4482,7 +4482,7 @@
       "lon": -63.026,
       "source_addresses": 1,
       "source_reports": 15784,
-      "persistence_days": 166.0,
+      "persistence_days": 167.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4582,7 +4582,7 @@
       "lon": 125.855,
       "source_addresses": 1,
       "source_reports": 6,
-      "persistence_days": 91.0,
+      "persistence_days": 94.0,
       "host_observations": 0,
       "by_feed": {
         "dshield": {
@@ -4600,19 +4600,19 @@
     {
       "code": "US",
       "name": "United States of America",
-      "value": 39914,
+      "value": 39899,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "CN",
       "name": "People's Republic of China",
-      "value": 25373,
+      "value": 25382,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "CA",
       "name": "Canada",
-      "value": 6861,
+      "value": 6862,
       "metric": "DShield source addresses located in this country"
     },
     {
@@ -4624,13 +4624,13 @@
     {
       "code": "RU",
       "name": "Russia",
-      "value": 5462,
+      "value": 5461,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "GB",
       "name": "United Kingdom",
-      "value": 5176,
+      "value": 5177,
       "metric": "DShield source addresses located in this country"
     },
     {
@@ -4648,13 +4648,13 @@
     {
       "code": "DE",
       "name": "Germany",
-      "value": 4417,
+      "value": 4411,
       "metric": "DShield source addresses located in this country"
     },
     {
       "code": "NL",
       "name": "Netherlands",
-      "value": 4370,
+      "value": 4367,
       "metric": "DShield source addresses located in this country"
     }
   ],
@@ -4830,7 +4830,7 @@
   ],
   "severity_note": "Severity is a local triage heuristic derived from published feed fields (for example ThreatFox confidence, Feodo C2 role, or CISA ransomware use). It is not a vendor-assigned score.",
   "timeline": {
-    "end": "2026-11-23T01:59:24Z",
+    "end": "2026-11-23T10:49:09Z",
     "hours": 24,
     "buckets": [
       0,
