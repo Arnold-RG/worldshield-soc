@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   report:
@@ -28,15 +29,16 @@ jobs:
           else
             python3 scripts/analyze.py --no-llm
           fi
-      - name: Commit the report on main
+      - name: Propose generated updates for review
         if: github.ref == 'refs/heads/main'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/reports
-          if git diff --staged --quiet; then
-            echo "Report unchanged"
-          else
-            git commit -m "Update the SOC analyst report"
-            git push
-          fi
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/soc-generated-updates
+          base: main
+          draft: true
+          delete-branch: false
+          add-paths: |
+            public/data/reports
+          commit-message: "Update generated SOC data for review"
+          title: "chore: review generated SOC data updates"
+          body: "Automated SOC data update. Review feed contents, privacy scan, and report output before merging. No automatic production deployment is performed by this workflow."
