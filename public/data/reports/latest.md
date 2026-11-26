@@ -1,15 +1,15 @@
 # WorldShield SOC report
 
-- Report generated: 2026-11-26T14:30:21Z (rule-based analyst).
-- Snapshot generated: 2026-11-26T14:30:14Z.
+- Report generated: 2026-11-26T23:20:48Z (rule-based analyst).
+- Snapshot generated: 2026-11-26T23:20:39Z.
 - Label: Near-real-time cached threat activity from public feeds.
 - This is a near-real-time cached snapshot built by the fetch job. It is not a live attack stream.
 
 ## Executive summary
 
-WorldShield SOC refreshed its public-feed cache at 2026-11-26T14:30:14Z. 7 of 9 feeds returned data. Figures below are counts from those cached parses, not a live detection stream.
-The parse includes 5 Feodo Tracker C2 addresses; 1,737 Spamhaus DROP networks; 486 ASN-DROP listings; 167,531 DShield source addresses (632,569,404 sensor reports, about the last 30 days); 1,805 CISA KEV catalog entries.
-The highest DShield source-address counts, by country of the source and not of a victim, are United States of America (40,589 source addresses), People's Republic of China (25,657 source addresses), Canada (7,025 source addresses), Pakistan (5,811 source addresses), Russia (5,557 source addresses).
+WorldShield SOC refreshed its public-feed cache at 2026-11-26T23:20:39Z. 7 of 9 feeds returned data. Figures below are counts from those cached parses, not a live detection stream.
+The parse includes 5 Feodo Tracker C2 addresses; 1,737 Spamhaus DROP networks; 486 ASN-DROP listings; 171,801 DShield source addresses (622,985,155 sensor reports, about the last 30 days); 1,805 CISA KEV catalog entries.
+The highest DShield source-address counts, by country of the source and not of a victim, are United States of America (40,272 source addresses), People's Republic of China (25,498 source addresses), Brazil (9,766 source addresses), Canada (7,178 source addresses), Pakistan (5,764 source addresses).
 The most frequently tagged malware families in this cache are QakBot (4), Emotet (1).
 The newest CISA KEV entry in this cache is CVE-2026-103406 (Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability), added 2026-11-25. 1 of the listed recent entries are tagged for known ransomware use.
 Feeds that did not return usable data in this run: abuse.ch URLhaus, abuse.ch ThreatFox. Treat those panels as stale.
@@ -24,14 +24,14 @@ Threat-type counts over the full parse, not only the 24-hour window: drop-listin
 ## Top threats
 
 **Source countries (DShield source addresses, about 30 days of sensor reports):**
-- United States of America (US): 40,589 — DShield source addresses located in this country.
-- People's Republic of China (CN): 25,657 — DShield source addresses located in this country.
-- Canada (CA): 7,025 — DShield source addresses located in this country.
-- Pakistan (PK): 5,811 — DShield source addresses located in this country.
-- Russia (RU): 5,557 — DShield source addresses located in this country.
-- United Kingdom (GB): 5,215 — DShield source addresses located in this country.
-- Brazil (BR): 4,666 — DShield source addresses located in this country.
-- Ukraine (UA): 4,585 — DShield source addresses located in this country.
+- United States of America (US): 40,272 — DShield source addresses located in this country.
+- People's Republic of China (CN): 25,498 — DShield source addresses located in this country.
+- Brazil (BR): 9,766 — DShield source addresses located in this country.
+- Canada (CA): 7,178 — DShield source addresses located in this country.
+- Pakistan (PK): 5,764 — DShield source addresses located in this country.
+- Russia (RU): 5,514 — DShield source addresses located in this country.
+- United Kingdom (GB): 5,211 — DShield source addresses located in this country.
+- Ukraine (UA): 4,579 — DShield source addresses located in this country.
 **Malware families (from tags the feeds themselves published):**
 - QakBot: 4 indicators in the full parse.
 - Emotet: 1 indicators in the full parse.
