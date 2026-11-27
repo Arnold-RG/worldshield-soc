@@ -1,17 +1,17 @@
 # WorldShield SOC report
 
-- Report generated: 2026-11-27T15:38:00Z (rule-based analyst).
-- Snapshot generated: 2026-11-27T15:37:51Z.
+- Report generated: 2026-11-27T23:44:52Z (rule-based analyst).
+- Snapshot generated: 2026-11-27T23:44:45Z.
 - Label: Near-real-time cached threat activity from public feeds.
 - This is a near-real-time cached snapshot built by the fetch job. It is not a live attack stream.
 
 ## Executive summary
 
-WorldShield SOC refreshed its public-feed cache at 2026-11-27T15:37:51Z. 7 of 9 feeds returned data. Figures below are counts from those cached parses, not a live detection stream.
-The parse includes 5 Feodo Tracker C2 addresses; 1,737 Spamhaus DROP networks; 486 ASN-DROP listings; 176,230 DShield source addresses (653,254,292 sensor reports, about the last 30 days); 1,805 CISA KEV catalog entries.
-The highest DShield source-address counts, by country of the source and not of a victim, are United States of America (42,792 source addresses), People's Republic of China (26,129 source addresses), Canada (8,453 source addresses), Russia (6,655 source addresses), Pakistan (5,847 source addresses).
+WorldShield SOC refreshed its public-feed cache at 2026-11-27T23:44:45Z. 7 of 9 feeds returned data. Figures below are counts from those cached parses, not a live detection stream.
+The parse includes 5 Feodo Tracker C2 addresses; 1,737 Spamhaus DROP networks; 486 ASN-DROP listings; 168,843 DShield source addresses (635,877,539 sensor reports, about the last 30 days); 1,808 CISA KEV catalog entries.
+The highest DShield source-address counts, by country of the source and not of a victim, are United States of America (40,736 source addresses), People's Republic of China (25,721 source addresses), Canada (7,868 source addresses), Pakistan (5,803 source addresses), Russia (5,616 source addresses).
 The most frequently tagged malware families in this cache are QakBot (4), Emotet (1).
-The newest CISA KEV entry in this cache is CVE-2026-103406 (Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability), added 2026-11-25. 1 of the listed recent entries are tagged for known ransomware use.
+The newest CISA KEV entry in this cache is CVE-2026-120705 (OSGeo GeoServer XML Injection Vulnerability), added 2026-11-27. 1 of the listed recent entries are tagged for known ransomware use.
 Feeds that did not return usable data in this run: abuse.ch URLhaus, abuse.ch ThreatFox. Treat those panels as stale.
 No fetched feed publishes a victim or target country, so this report does not rank target countries or draw attack paths.
 
@@ -24,14 +24,14 @@ Threat-type counts over the full parse, not only the 24-hour window: drop-listin
 ## Top threats
 
 **Source countries (DShield source addresses, about 30 days of sensor reports):**
-- United States of America (US): 42,792 — DShield source addresses located in this country.
-- People's Republic of China (CN): 26,129 — DShield source addresses located in this country.
-- Canada (CA): 8,453 — DShield source addresses located in this country.
-- Russia (RU): 6,655 — DShield source addresses located in this country.
-- Pakistan (PK): 5,847 — DShield source addresses located in this country.
-- United Kingdom (GB): 5,313 — DShield source addresses located in this country.
-- Brazil (BR): 4,815 — DShield source addresses located in this country.
-- Germany (DE): 4,699 — DShield source addresses located in this country.
+- United States of America (US): 40,736 — DShield source addresses located in this country.
+- People's Republic of China (CN): 25,721 — DShield source addresses located in this country.
+- Canada (CA): 7,868 — DShield source addresses located in this country.
+- Pakistan (PK): 5,803 — DShield source addresses located in this country.
+- Russia (RU): 5,616 — DShield source addresses located in this country.
+- United Kingdom (GB): 5,238 — DShield source addresses located in this country.
+- Brazil (BR): 4,709 — DShield source addresses located in this country.
+- Ukraine (UA): 4,600 — DShield source addresses located in this country.
 **Malware families (from tags the feeds themselves published):**
 - QakBot: 4 indicators in the full parse.
 - Emotet: 1 indicators in the full parse.
@@ -48,18 +48,18 @@ Threat-type counts over the full parse, not only the 24-hour window: drop-listin
 - AS5061 (DRH-RND, country NL): 1 listings or indicators.
 **Local triage severity on parsed events:** high 1,742, medium 319, low 81. See the method section for how these labels are assigned.
 **Recent CISA Known Exploited Vulnerabilities (catalog dates, not exploit timestamps):**
+- CVE-2026-120705: OSGeo GeoServer XML Injection Vulnerability (OSGeo GeoServer), added 2026-11-27, ransomware campaign use: Unknown.
+- CVE-2026-129243: OSGeo GeoServer Incorrect Authorization Vulnerability (OSGeo GeoServer), added 2026-11-27, ransomware campaign use: Unknown.
+- CVE-2026-136716: Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability (Drupal Core), added 2026-11-27, ransomware campaign use: Unknown.
 - CVE-2026-103406: Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability (Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router), added 2026-11-25, ransomware campaign use: Unknown.
 - CVE-2026-133469: Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability (Vates Xen Orchestra), added 2026-11-25, ransomware campaign use: Unknown.
 - CVE-2025-41450: Danfoss AK-SM 800A Series Improper Authentication Vulnerability (Danfoss AK-SM 800A Series), added 2026-11-25, ransomware campaign use: Unknown.
 - CVE-2023-25914: Danfoss AK-SM 800A Series Path Traversal Vulnerability (Danfoss AK-SM 800A Series), added 2026-11-25, ransomware campaign use: Unknown.
 - CVE-2023-25915: Danfoss AK-SM 800A Series Improper Input Validation Vulnerability (Danfoss AK-SM 800A Series), added 2026-11-25, ransomware campaign use: Unknown.
-- CVE-2026-133324: Mitel MiCollab Not Failing Securely Vulnerability (Mitel MiCollab), added 2026-11-25, ransomware campaign use: Unknown.
-- CVE-2026-133275: Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability (Mitel MiCollab), added 2026-11-25, ransomware campaign use: Unknown.
-- CVE-2026-133311: Mitel MiCollab Weak Authentication Vulnerability (Mitel MiCollab), added 2026-11-25, ransomware campaign use: Unknown.
 
 ## Recommended actions
 
-1. Prioritize patching of the newest CISA KEV entries in this cache (CVE-2026-103406, CVE-2026-133469, CVE-2025-41450, CVE-2023-25914, CVE-2023-25915, CVE-2026-133324). Confirm exposure against local inventory before treating a CVE as relevant.
+1. Prioritize patching of the newest CISA KEV entries in this cache (CVE-2026-120705, CVE-2026-129243, CVE-2026-136716, CVE-2026-103406, CVE-2026-133469, CVE-2025-41450). Confirm exposure against local inventory before treating a CVE as relevant.
 2. Give earlier attention to KEV items with known ransomware campaign use: CVE-2024-10441.
 3. Block Feodo Tracker C2 addresses at the perimeter and review outbound traffic to those hosts. The Feodo country field is the location of the C2 address, not a victim country.
 4. Apply Spamhaus DROP and ASN-DROP listings only under Spamhaus terms, and only as a network-control input. Do not republish the raw lists.
