@@ -1,15 +1,15 @@
 # WorldShield SOC report
 
-- Report generated: 2026-11-28T05:00:02Z (rule-based analyst).
-- Snapshot generated: 2026-11-28T04:59:53Z.
+- Report generated: 2026-11-28T14:15:11Z (rule-based analyst).
+- Snapshot generated: 2026-11-28T14:15:02Z.
 - Label: Near-real-time cached threat activity from public feeds.
 - This is a near-real-time cached snapshot built by the fetch job. It is not a live attack stream.
 
 ## Executive summary
 
-WorldShield SOC refreshed its public-feed cache at 2026-11-28T04:59:53Z. 7 of 9 feeds returned data. Figures below are counts from those cached parses, not a live detection stream.
-The parse includes 5 Feodo Tracker C2 addresses; 1,737 Spamhaus DROP networks; 486 ASN-DROP listings; 163,699 DShield source addresses (598,890,833 sensor reports, about the last 30 days); 1,808 CISA KEV catalog entries.
-The highest DShield source-address counts, by country of the source and not of a victim, are United States of America (39,737 source addresses), People's Republic of China (25,248 source addresses), Canada (6,836 source addresses), Pakistan (5,704 source addresses), Russia (5,432 source addresses).
+WorldShield SOC refreshed its public-feed cache at 2026-11-28T14:15:02Z. 7 of 9 feeds returned data. Figures below are counts from those cached parses, not a live detection stream.
+The parse includes 5 Feodo Tracker C2 addresses; 1,727 Spamhaus DROP networks; 481 ASN-DROP listings; 164,868 DShield source addresses (615,579,147 sensor reports, about the last 30 days); 1,808 CISA KEV catalog entries.
+The highest DShield source-address counts, by country of the source and not of a victim, are United States of America (39,998 source addresses), People's Republic of China (25,358 source addresses), Canada (6,967 source addresses), Pakistan (5,714 source addresses), Russia (5,456 source addresses).
 The most frequently tagged malware families in this cache are QakBot (4), Emotet (1).
 The newest CISA KEV entry in this cache is CVE-2026-120705 (OSGeo GeoServer XML Injection Vulnerability), added 2026-11-27. 1 of the listed recent entries are tagged for known ransomware use.
 Feeds that did not return usable data in this run: abuse.ch URLhaus, abuse.ch ThreatFox. Treat those panels as stale.
@@ -19,19 +19,19 @@ No fetched feed publishes a victim or target country, so this report does not ra
 
 Each bar counts timestamps carried by the feeds during that hour of this cache window. An empty bar means those feeds had no timestamp then, not that an attack did not happen.
 No feed timestamps fell inside this 24-hour cache window, so the timeline is empty. That is a property of the stamps, not evidence that nothing happened.
-Threat-type counts over the full parse, not only the 24-hour window: drop-listing (1,737), phishing (300), sensor-source (100), QakBot (4), Emotet (1).
+Threat-type counts over the full parse, not only the 24-hour window: drop-listing (1,727), phishing (300), sensor-source (100), QakBot (4), Emotet (1).
 
 ## Top threats
 
 **Source countries (DShield source addresses, about 30 days of sensor reports):**
-- United States of America (US): 39,737 — DShield source addresses located in this country.
-- People's Republic of China (CN): 25,248 — DShield source addresses located in this country.
-- Canada (CA): 6,836 — DShield source addresses located in this country.
-- Pakistan (PK): 5,704 — DShield source addresses located in this country.
-- Russia (RU): 5,432 — DShield source addresses located in this country.
-- United Kingdom (GB): 5,166 — DShield source addresses located in this country.
-- Brazil (BR): 4,621 — DShield source addresses located in this country.
-- Ukraine (UA): 4,507 — DShield source addresses located in this country.
+- United States of America (US): 39,998 — DShield source addresses located in this country.
+- People's Republic of China (CN): 25,358 — DShield source addresses located in this country.
+- Canada (CA): 6,967 — DShield source addresses located in this country.
+- Pakistan (PK): 5,714 — DShield source addresses located in this country.
+- Russia (RU): 5,456 — DShield source addresses located in this country.
+- United Kingdom (GB): 5,176 — DShield source addresses located in this country.
+- Brazil (BR): 4,627 — DShield source addresses located in this country.
+- Ukraine (UA): 4,513 — DShield source addresses located in this country.
 **Malware families (from tags the feeds themselves published):**
 - QakBot: 4 indicators in the full parse.
 - Emotet: 1 indicators in the full parse.
@@ -46,7 +46,7 @@ Threat-type counts over the full parse, not only the 24-hour window: drop-listin
 - AS3563 (PILOT-ASN, country US): 1 listings or indicators.
 - AS5060 (DE-KAT, country NL): 1 listings or indicators.
 - AS5061 (DRH-RND, country NL): 1 listings or indicators.
-**Local triage severity on parsed events:** high 1,742, medium 319, low 81. See the method section for how these labels are assigned.
+**Local triage severity on parsed events:** high 1,732, medium 319, low 81. See the method section for how these labels are assigned.
 **Recent CISA Known Exploited Vulnerabilities (catalog dates, not exploit timestamps):**
 - CVE-2026-120705: OSGeo GeoServer XML Injection Vulnerability (OSGeo GeoServer), added 2026-11-27, ransomware campaign use: Unknown.
 - CVE-2026-129243: OSGeo GeoServer Incorrect Authorization Vulnerability (OSGeo GeoServer), added 2026-11-27, ransomware campaign use: Unknown.
